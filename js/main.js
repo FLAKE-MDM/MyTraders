@@ -5,7 +5,6 @@ $('.pane-open').click(function(e){
   e.preventDefault();
   $('body').removeClass('overflow-none');
   $('body').addClass('overflow-none');
-  $('.pane-open').removeClass('active');
   let paneId = $($(this)).attr('href');
   let pane = document.querySelector(paneId)
   if(!pane.classList.contains('show')){
@@ -106,11 +105,13 @@ $(".modal").mousedown(function(e){
 // // home
 $(".login__mobile-link").click(function(e){
   e.preventDefault();
+  $('.btn-menu').removeClass('active')
   $(this).toggleClass('active')
 })
 
 $(".btn-menu").click(function(e){
   e.preventDefault();
+  $('.login__mobile-link').removeClass('active')
   $(this).toggleClass('active')
 })
 
@@ -186,6 +187,7 @@ $('.radio-list__item').click(function(){
   $(this).parents(".radio-list").find(".radio-list__item").removeClass('active');
   $(this).addClass('active');
 });
+
 
 // range
 let slider = document.querySelector('#range');
