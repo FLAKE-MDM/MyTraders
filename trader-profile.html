@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TRADES</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="d-flex content">
+            <!-- aside -->
+            <aside class="aside pane pane_left" id="aside">
+                <a href="index.html" class="logo aside__logo d-flex align-items-center mb-md">
+                    <div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div>
+                    <div class="logo__text"><img src="img/logo-text.svg" alt="" class="img-fluid"></div>
+                </a>
+                <ul class="menu-list mb-md">
+                    <li class="menu-list__item">
+                        <a href="personal-cabinet.html" class="menu-list__link">
+                            <span class="icon icon-widget menu-list__icon"></span>Панель
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="traders.html" class="menu-list__link active">
+                            <span class="icon icon-chart menu-list__icon"></span>Трейдеры
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="wallet.html" class="menu-list__link">
+                            <span class="icon icon-wallet menu-list__icon"></span>Кошелёк
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="security.html" class="menu-list__link">
+                            <span class="icon icon-shield menu-list__icon"></span>Безопасность
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="referral.html" class="menu-list__link">
+                            <span class="icon icon-bag menu-list__icon"></span>Реф.программа
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="support.html" class="menu-list__link">
+                            <span class="icon icon-chat menu-list__icon"></span>Поддержка
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">
+                            <span class="icon icon-off menu-list__icon"></span>Выход
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright aside__copyright text_size-sm">
+                    <div class="text_normal">Copyright © 2022</div>
+                    <div class="text_dark">Все права защищены. </div>
+                </div>
+            </aside>
+            <!-- /aside -->
+            <!-- main -->
+            <main class="main d-flex flex-column">
+                <!-- main__header -->
+                <div class="main__header d-flex align-items-center">
+                    <a href="#aside" class="btn-menu main__btn-menu pane-open d-xl-none">
+                        <div class="btn-menu__item"></div>
+                        <div class="btn-menu__item"></div>
+                        <div class="btn-menu__item"></div>
+                    </a>
+                    <div class="main__title text_mediumbold text_upper d-flex align-items-center">
+                        <span class="icon icon-chart-double"></span>
+                        Профиль трейдера
+                    </div>
+                    <div class="fake-select main__language language dropdown">
+                        <a href="#" class="fake-select__link dropdown-toggle">
+                            <span class="fake-select__value">
+                                <div class="language__icon"><img src="img/icons/ua.svg" alt="" class="img-fluid"></div>
+                            </span>
+                        </a>
+                        <div class="fake-select__dropdown dropdown-menu">
+                            <label class="fake-select__item active">
+                                <input type="radio" class="collapse" name="language">
+                                <span class="language__icon"><img src="img/icons/ua.svg" alt="" class="img-fluid"></span>
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="language">
+                                <span class="language__icon"><img src="img/icons/ru.svg" alt="" class="img-fluid"></span>
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="language">
+                                <span class="language__icon"><img src="img/icons/gb.svg" alt="" class="img-fluid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <a href="#profile" class="d-flex align-items-center user-info__dropdown-toggle modal-open">
+                            <div class="user-info__image"><img src="img/content/user-2.jpg" alt=""></div>
+                            <div class="user-info__text">
+                                <div class="text_normal user-info__name text_size-sm">Alexander Morgan</div>
+                                <div class="text_primary text_mediumbold">3054.45 $</div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#balance" class="btn btn_size-xs modal-open">Пополнить</a>
+                </div>
+                <!-- /main__header -->
+                <!-- trader-info -->
+                <div class="box profile box_padding flex-wrap d-flex align-items-center justify-content-between mb-md">
+                    <div class="profile__user-card user-card d-flex align-items-center">
+                        <div class="user-card__image circle-image circle-image_lg">
+                            <img src="img/content/user-8.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="user-card__text p-0">
+                            <div class="text_normal text_size-lg user-card__name">Alexander Morgan</div>
+                            <p class="text_dark text_size-sm">ID 459368942</p>
+                        </div>
+                    </div>
+                    <div class="d-flex profile__info">
+                        <div class="info-block d-flex p-0">
+                            <div class="me-3"><img src="img/icons/binance-lg.svg" alt="" class="img-fluid"></div>
+                            <div class="info-block__text">
+                                <div class="text_mediumbold text_styling info-block__title-lg">Binance</div>
+                                <div class="text_dark text_size-sm text_normal">Биржа</div>
+                            </div>
+                        </div>
+                        <div class="info-block d-flex p-0">
+                            <div class="info-block__icon info-block__icon_sm"><span class="icon icon-user-fill"></span></div>
+                            <div class="info-block__text">
+                                <div class="text_mediumbold text_styling info-block__title-lg">12 644</div>
+                                <div class="text_dark text_size-sm text_normal">Подписчики</div>
+                            </div>
+                        </div>
+                        <div class="info-block d-flex p-0">
+                            <div class="info-block__icon info-block__icon_sm"><span class="icon icon-chart-fill"></span></div>
+                            <div class="info-block__text">
+                                <div class="text_mediumbold text_styling info-block__title-lg">110%</div>
+                                <div class="text_dark text_size-sm text_normal">ROI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn_size-sm w-100_xs">Инвестировать</a>
+                </div>
+                <!-- /trader-info -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- box -->
+                        <div class="box mb-md tab-section">
+                            <div class="box__heading d-md-flex justify-content-between">
+                                <div class="box__title text_upper text_mediumbold">Общий доход</div>
+                                <ul class="d-flex btn-nav tab-nav">
+                                    <li class="btn-nav__item"><a href="#incomeTotal-30" class="tab-link btn-nav__link active">30 дней</a></li>
+                                    <li class="btn-nav__item"><a href="#incomeTotal-60" class="tab-link btn-nav__link">60 дней</a></li>
+                                    <li class="btn-nav__item"><a href="#incomeTotal-90" class="tab-link btn-nav__link">90 дней</a></li>
+                                </ul>
+                            </div>
+                            <div class="box__body_padding-md">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="incomeTotal-30">
+                                        <div id="chart-incomeTotal-30"></div>
+                                    </div>
+                                    <div class="tab-pane" id="incomeTotal-60">
+                                        <div id="chart-incomeTotal-60"></div>
+                                    </div>
+                                    <div class="tab-pane" id="incomeTotal-90">
+                                        <div id="chart-incomeTotal-90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /box -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- box -->
+                        <div class="box mb-md tab-section">
+                            <div class="box__heading d-md-flex justify-content-between">
+                                <div class="box__title text_upper text_mediumbold">Количество сделок</div>
+                                <ul class="d-flex btn-nav tab-nav">
+                                    <li class="btn-nav__item"><a href="#amountDeals-30" class="tab-link btn-nav__link">30 дней</a></li>
+                                    <li class="btn-nav__item"><a href="#amountDeals-90" class="tab-link btn-nav__link active">90 дней</a></li>
+                                    <li class="btn-nav__item"><a href="#amountDeals-180" class="tab-link btn-nav__link">180 дней</a></li>
+                                </ul>
+                            </div>
+                            <div class="box__body_padding-md">
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="amountDeals-30">
+                                        <div id="chart-amountDeals-30"></div>
+                                    </div>
+                                    <div class="tab-pane active" id="amountDeals-90">
+                                        <div id="chart-amountDeals-90"></div>
+                                    </div>
+                                    <div class="tab-pane" id="amountDeals-180">
+                                        <div id="chart-amountDeals-180"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /box -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- box -->
+                        <div class="box mb-md tab-section">
+                            <div class="box__heading d-md-flex justify-content-between">
+                                <div class="box__title text_upper text_mediumbold">Калькулятор дохода</div>
+                                <ul class="d-flex btn-nav">
+                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link active" data-currency="$">USD</a></li>
+                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link" data-currency="₽">RUB</a></li>
+                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link" data-currency="€">EUR</a></li>
+                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link" data-currency="₴">UHA</a></li>
+                                </ul>
+                            </div>
+                            <div class="box__body_padding calc-block">
+                                <form action="#">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="text_dark text_normal text_size-sm">Первоначальная <br>сумма</div>
+                                        <input class="range-input form-control form-control_sm text_center" id="calc-range-value"></input>
+                                    </div>
+                                    <div class="calc-block__range-block range-block d-flex align-items-center">
+                                        <div class="text_dark text_size-sm text_normal">10</div>
+                                        <div id="calc-range"></div>
+                                        <div class="text_dark text_size-sm text_normal">100K</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center calc-block__footer">
+                                        <div class="text_dark text_normal text_size-sm">Вы будете <br>получать прибыль</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="text_primary text_styling text_bold calc-block__num">10%</div>
+                                            <div class="dropdown ms-1">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info-double "></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_padding dropdown-menu_right">
+                                                    text
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn_size-sm w-100_xs">Инвестировать</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /box -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- box -->
+                        <div class="box mb-md tab-section">
+                            <div class="box__heading d-md-flex justify-content-between">
+                                <div class="box__title text_upper text_mediumbold">История сделок</div>
+                                <ul class="d-flex btn-nav tab-nav">
+                                    <li class="btn-nav__item"><a href="#historyDeals-30" class="tab-link btn-nav__link active">30 дней</a></li>
+                                    <li class="btn-nav__item"><a href="#historyDeals-90" class="tab-link btn-nav__link">90 дней</a></li>
+                                    <li class="btn-nav__item"><a href="#historyDeals-180" class="tab-link btn-nav__link">180 дней</a></li>
+                                </ul>
+                            </div>
+                            <div class="box__body_padding-md">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="historyDeals-30">
+                                        <div id="chart-historyDeals-30"></div>
+                                    </div>
+                                    <div class="tab-pane" id="historyDeals-90">
+                                        <div id="chart-historyDeals-90"></div>
+                                    </div>
+                                    <div class="tab-pane" id="historyDeals-180">
+                                        <div id="chart-historyDeals-180"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /box -->
+                    </div>
+                </div>
+                <!-- Connected Traders -->
+                <div class="box">
+                    <div class="box__heading">
+                        <div class="box__title text_upper text_mediumbold">История сделок</div>
+                    </div>
+                    <table class="table table_lg mobile-table">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Направление</th>
+                                <th>Точка входа</th>
+                                <th>Точка выхода</th>
+                                <th>Итог %</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <div class="d-inline-flex d-md-flex align-items-center">
+                                    <span class="icon icon-transger me-3"></span>21 Марта 2022</div>
+                                </td>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center еxchange-direction">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon icon-ethereum me-3"></div>
+                                        ETH
+                                    </div>
+                                    <div class="icon icon-arrow-separator me-3 ms-3 еxchange-direction__separator"></div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon icon-tether me-3"></div>
+                                        USDT
+                                    </div>
+                                </div>
+                            </td>
+                            <td>3400 $</td>
+                            <td>3400 $</td>
+                            <td><span class="text_primary text_normal">+7.7%</span></td>
+                            <td class="text_right">
+                                <div class="dropdown d-inline-flex">
+                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                        <span class="icon icon-dots"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu_right">
+                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                            <span class="icon icon-info me-1"></span>
+                                            Подробнее
+                                        </a>
+                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                            <span class="icon me-1 icon-download"></span>
+                                            Скачать
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-inline-flex d-md-flex align-items-center">
+                                    <span class="icon icon-transger me-3"></span>21 Марта 2022</div>
+                                </td>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center еxchange-direction">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon icon-ethereum me-3"></div>
+                                        ETH
+                                    </div>
+                                    <div class="icon icon-arrow-separator me-3 ms-3 еxchange-direction__separator"></div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon icon-tether me-3"></div>
+                                        USDT
+                                    </div>
+                                </div>
+                            </td>
+                            <td>3400 $</td>
+                            <td>3400 $</td>
+                            <td><span class="text_primary text_normal">+7.7%</span></td>
+                            <td class="text_right">
+                                <div class="dropdown d-inline-flex">
+                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                        <span class="icon icon-dots"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu_right">
+                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                            <span class="icon icon-info me-1"></span>
+                                            Подробнее
+                                        </a>
+                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                            <span class="icon me-1 icon-download"></span>
+                                            Скачать
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- pagination -->
+                    <ul class="pagination d-flex align-items-center justify-content-center">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link d-flex align-items-center">
+                                <span class="icon icon-caret-left pagination__icon"></span>Назад
+                            </a>
+                        </li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                        <li class="pagination__item"><span class="pagination__link active">2</span></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">10</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">20</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">30</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">40</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">50</a></li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link d-flex align-items-center">
+                                Вперёд<span class="icon icon-caret-right pagination__icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /pagination -->
+                </div>
+                <!-- Connected Traders -->
+            </main>
+            <!-- /main -->
+        </div>
+        <a href="#" class="pane-close pane-close__link"></a>
+    </div>
+
+    <!-- profile -->
+    <div class="modal fade" id="profile">
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    Профиль
+                    <button type="button" class="icon modal__close icon-close-circle"></button>
+                </div>
+                <div class="modal__user-card user-card d-flex align-items-center">
+                    <div class="user-card__image circle-image circle-image_lg">
+                        <img src="img/content/user-8.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="user-card__text">
+                        <p class="text_normal text_size-lg">Alexander Morgan</p>
+                        <p class="text_dark text_size-sm">ID 459368942</p>
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-email-primary form-icon"></span>
+                                <input type="email" class="form-control" placeholder="E-mail" value="whemper@gmail.com">
+                            </label>
+                        </div>
+                        <div class="text_upper text_mediumbold mb-xs">Изменить пароль</div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-lock-primary form-icon"></span>
+                                <input type="password" class="form-control" placeholder="Введите действующий пароль">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-lock-primary form-icon"></span>
+                                <input type="password" class="form-control" placeholder="Новый пароль">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-lock-primary form-icon"></span>
+                                <input type="password" class="form-control" placeholder="Пароль еще раз">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn_size-sm w-100">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /profile -->
+
+    <!-- balance -->
+    <div class="modal fade" id="balance">
+        <div class="modal-dialog modal-dialog_md">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    Пополнение баланса
+                    <button type="button" class="icon modal__close icon-close-circle"></button>
+                </div>
+                <div class="modal__body modal__body_padding">
+                    <form action="#">
+                        <p class="text_dark text_normal text_size-sm">Выбирите способ пополнения</p>
+                        <div class="radio-list">
+                            <label class="radio-list__item active">
+                                <input type="radio" class="collapse" checked name="payment">
+                                <div class="radio-list__icon icon icon-pay-bank"></div>
+                                <div class="radio-list__text">Банковский платеж</div>
+                            </label>
+                            <label class="radio-list__item">
+                                <input type="radio" class="collapse" name="payment">
+                                <div class="radio-list__icon icon icon-pay-bitcoin"></div>
+                                <div class="radio-list__text">Bitcoin</div>
+                            </label>
+                            <label class="radio-list__item">
+                                <input type="radio" class="collapse" name="payment">
+                                <div class="radio-list__icon icon icon-pay-ethereum"></div>
+                                <div class="radio-list__text">Ethereum</div>
+                            </label>
+                            <label class="radio-list__item">
+                                <input type="radio" class="collapse" name="payment">
+                                <div class="radio-list__icon icon icon-pay-tether"></div>
+                                <div class="radio-list__text">Tether USDT</div>
+                            </label>
+                        </div>
+                        <p class="text_dark text_normal text_size-sm">Сумма пополнения</p>
+                        <input class="range-input form-control text_center" id="range-value"></input>
+                        <div class="range-block d-flex align-items-center">
+                            <div class="text_dark text_size-sm text_normal">10</div>
+                            <div id="range"></div>
+                            <div class="text_dark text_size-sm text_normal">1M</div>
+                        </div>
+                        <div class="form-group text_center">
+                            <button class="btn btn_size-sm">Перейти к оплате</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /balance -->
+    
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/stacktable.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <!-- <script src="js/Chart.js"></script> -->
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TRADES</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap section-before" id="wrap">
+        <!-- header -->
+        <header class="header d-flex align-items-center">
+            <a href="index.html" class="logo header__logo d-flex align-items-center">
+                <div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div>
+                <div class="logo__text"><img src="img/logo-text.svg" alt="" class="img-fluid"></div>
+            </a>
+            <nav class="navbar pane d-xl-flex" id="navbar">
+                <ul class="nav-list d-xl-flex align-items-center">
+                    <li class="nav-list__item"><a href="#" class="nav-list__link active">Пасивный заработок</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Трейдинг</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Доходы и безопасность</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Обратная связь</a></li>
+                    <li class="nav-list__item">
+                        <div class="fake-select language dropdown">
+                            <a href="#" class="fake-select__link dropdown-toggle">
+                                <span class="fake-select__value">
+                                    <span class="d-none d-xl-block">UA</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/ua.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">Украинский</div>
+                                    </div>
+                                </span>
+                            </a>
+                            <div class="fake-select__dropdown dropdown-menu">
+                                <label class="fake-select__item">
+                                    <input type="radio" class="collapse" name="language">
+                                    <span class="d-none d-xl-block">RU</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/ru.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">Русский</div>
+                                    </div>
+                                </label>
+                                <label class="fake-select__item active">
+                                    <input type="radio" class="collapse" name="language">
+                                    <span class="d-none d-xl-block">UA</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/ua.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">Украинский</div>
+                                    </div>
+                                </label>
+                                <label class="fake-select__item">
+                                    <input type="radio" class="collapse" name="language">
+                                    <span class="d-none d-xl-block">EN</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/gb.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">English</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login">
+                <div class="d-none d-xl-flex d-flex align-items-center">
+                    <a href="#login" class="d-flex login__link align-items-center modal-open">
+                        <div class="circle-image login__image"><div class="circle-image__icon icon icon-user-circle"></div></div>
+                        Войти
+                    </a>
+                    <span class="text_dark login__separator">или</span>
+                    <a href="#registration" class="btn modal-open">Регистрация</a>
+                </div>
+                <a href="#login" class="login__mobile-link modal-open icon d-xl-none icon-login"></a>
+            </div>
+            <a href="#navbar" class="btn-menu pane-open d-xl-none">
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+            </a>
+        </header>
+        <!-- /header -->
+        <!-- preview -->
+        <div class="preview-section">
+            <div class="container">
+                <div class="d-flex flex-wrap">
+                    <div class="preview-section__text">
+                        <div class="title_size-xl text_mediumbold mb-lg text_center_sm">Инвестируй с лучшими крипто-трейдерами </div>
+                        <ul class="check-list preview-section__check-list text_dark">
+                            <li class="check-list__item">Сервис автоматического копирования сделок на криптовалютных биржах. </li>
+                            <li class="check-list__item">Наш сервис абсолютно бесплатный для  всех трейдеров</li>
+                        </ul>
+                        <div class="d-flex flex-wrap align-items-center preview-section__btn-group">
+                            <a href="#" class="btn btn_size-xl">Создать аккаунт</a>
+                            <a href="#" class="d-flex align-items-center text_normal">Подробнее  <span class="icon icon-arrow-right icon_margin-s-md"></span></a>
+                        </div>
+                        <div class="rating-block d-flex align-items-center">
+                            <div class="rating-block__logo"><img src="img/logo-trustpilot.svg" alt="" class="img-fluid"></div>
+                            <div class="rating">
+                                <div class="rating__active" style="width: 74%;"></div>
+                            </div>
+                            <div class="rating-num text_dark">4.5</div>
+                        </div>
+                    </div>
+                    <div class="preview-section__image"><img src="img/preview.png" alt="" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <!-- logos-section -->
+        <div class="logos-section bg_radial">
+            <div class="container">
+                <div class="logos-slider-wrap">
+                    <div class="logos-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-FTX.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-Binance.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-visa.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-Mastercard.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-Coinbase.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-qiwi.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-visa.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="logos-section__link" target="_blank">
+                                    <img src="img/content/logo-Mastercard.svg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-prev logos-prev"></div>
+                    <div class="swiper-button swiper-button-next logos-next"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /logos-section -->
+        <!-- about-section -->
+        <div class="about-section section-before">
+            <div class="container">
+                <div class="tab-section">
+                    <ul class="tab-nav d-flex">
+                        <li class="tab-nav__item"><a href="#passive" class="tab-link tab-nav__link active"><span class="tab-nav__icon icon icon-wallet"></span>Пассивный заработок</a></li>
+                        <li class="tab-nav__item"><a href="#public" class="tab-link tab-nav__link"><span class="tab-nav__icon icon icon-candlestick"></span>публичный трейдинг</a></li>
+                    </ul>
+                    <div class="tab-content text_center_sm">
+                        <!-- passive -->
+                        <div class="tab-pane active" id="passive">
+                            <div class="title_size-lg text_center text_mediumbold mb-xs mt-md">Пассивный заработок</div>
+                            <div class="title-after text_dark text_center mb-xl no-change_margin">Платформа управления инвестициями на рынке криптовалют которая позволяет частным инвеострам копировать реальтные сделки умспешных трейдеров</div>
+                            <!-- about-item -->
+                            <div class="about-item mb-xl d-md-flex align-items-center no-change_margin">
+                                <div class="about-item__image"><img src="img/passive-1.svg" alt="" class="img-fluid"></div>
+                                <div class="about-item__text">
+                                    <div class="title_size-sm text_normal mb-sm">Пассивный заработок никогдa еще не был таким простым</div>
+                                    <p class="text_dark text_size-sm">Вам даже не нужно знать что такое трейдинг и криптовалюта. Вашим депозитом <br class="d-none d-lg-block">будет управлять один из лучших трейдеров мира</p>
+                                </div>
+                            </div>
+                            <!-- /about-item -->
+                            <!-- about-item -->
+                            <div class="about-item mb-md d-md-flex align-items-center">
+                                <div class="about-item__image about-item__image_margin-mobile order-md-2"><img src="img/passive-2.svg" alt="" class="img-fluid"></div>
+                                <div class="about-item__text">
+                                    <div class="title_size-sm text_normal mb-sm">Мы собираем статистику трейдеров по всем елкам и выводим результаты</div>
+                                    <p class="text_dark text_size-sm">Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                                </div>
+                            </div>
+                            <!-- /about-item -->
+                            <div class="dots-block mb-md">
+                                <div class="dots-block__item"></div>
+                                <div class="dots-block__item"></div>
+                                <div class="dots-block__item"></div>
+                            </div>
+                            <!-- work-section -->
+                            <div class="work-section mb-lg">
+                                <div class="title_size-md text_mediumbold text_center mb-md">Как это работает?</div>
+                                <div class="row row_lg">
+                                    <div class="col-md-4 d-flex">
+                                        <div class="work-item">
+                                            <div class="work-item__image"><img src="img/icons/add-user.svg" alt="" class="img-fluid"></div>
+                                            <div class="title_size-xs text_normal work-item__title">Зарегистрируйтесь</div>
+                                            <p class="text_size-sm text_dark">На бирже Binance и на нашем сайте</p>
+                                            <p><a href="#" class="btn">Регистрация</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="work-item">
+                                            <div class="work-item__image"><img src="img/icons/bitcoin-wallet.svg" alt="" class="img-fluid"></div>
+                                            <div class="title_size-xs text_normal work-item__title">Пополните депозит</div>
+                                            <p class="text_size-sm text_dark">Пополните депозит на Binance и подпишитесь на лучшего трейдера в нашем сервисе</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="work-item">
+                                            <div class="work-item__image"><img src="img/icons/gold-bars.svg" alt="" class="img-fluid"></div>
+                                            <div class="title_size-xs text_normal work-item__title">Можете отдыхать</div>
+                                            <p class="text_size-sm text_dark">Пока вы отдыхаете  профессиональные трейдеры зарабатывают деньги</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /work-section -->
+                        </div>
+                        <!-- /passive -->
+                        <!-- public -->
+                        <div class="tab-pane" id="public">
+                            <div class="title_size-lg text_center text_mediumbold mb-xs mt-md">Публичный трейдинг</div>
+                            <div class="title-after text_dark text_center mb-lg">Платформа управления инвестициями на рынке криптовалют которая позволяет частным инвеострам копировать реальтные сделки умспешных трейдеров</div>
+                            <!-- about-item -->
+                            <div class="about-item about-item_margin d-md-flex align-items-center">
+                                <div class="about-item__image about-item__image_margin"><img src="img/public-1.svg" alt="" class="img-fluid"></div>
+                                <div class="about-item__text about-item__text_padding">
+                                    <div class="title_size-sm text_normal mb-sm">Торгуй на своей бирже, попади в список топ трейдеров и собирай платных подписчиков со всего мира</div>
+                                    <p class="text_dark text_size-sm">Больше не нужно заводить телеграм-канал для публикации сигналов и тратить огромные деньги на рекламу. Мы сами привлечем аудиторию и автоматизируем процесс взаимодействия с подписчиками. Вам остается только сфокусироваться на торговле</p>
+                                </div>
+                            </div>
+                            <!-- /about-item -->
+                            <!-- about-item -->
+                            <div class="about-item d-md-flex align-items-center">
+                                <div class="about-item__image order-md-2"><img src="img/public-2.svg" alt="" class="img-fluid"></div>
+                                <div class="about-item__text">
+                                    <div class="title_size-sm text_normal mb-sm">Все твои сделки будут автоматически открываться у твоих подписчиков</div>
+                                    <p class="text_dark text_size-sm">Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                                </div>
+                            </div>
+                            <!-- /about-item -->
+                            <div class="dots-block dots-block_padding mb-md">
+                                <div class="dots-block__item"></div>
+                                <div class="dots-block__item"></div>
+                                <div class="dots-block__item"></div>
+                            </div>
+                            <!-- work-section -->
+                            <div class="work-section mb-lg">
+                                <div class="title_size-md text_mediumbold text_center mb-md">Как это работает?</div>
+                                <div class="row row_lg">
+                                    <div class="col-md-4 d-flex">
+                                        <div class="work-item">
+                                            <div class="work-item__image"><img src="img/icons/add-user.svg" alt="" class="img-fluid"></div>
+                                            <div class="title_size-xs text_normal work-item__title">Зарегистрируйтесь</div>
+                                            <p class="text_size-sm text_dark">На нашем сайте. Создай канал и покдлючи API от своей биржт</p>
+                                            <a href="#" class="btn">Регистрация</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="work-item">
+                                            <div class="work-item__image"><img src="img/icons/financial-advisor.svg" alt="" class="img-fluid"></div>
+                                            <div class="title_size-xs text_normal work-item__title">Продолжи торговать
+                                                <br class="d-none d-lg-block">на своей бирже</div>
+                                            <p class="text_size-sm text_dark">Мы собираем статистику по всем
+                                                сделкам и выведем результаты
+                                                в список трейдеров</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="work-item">
+                                            <div class="work-item__image"><img src="img/icons/achievement.svg" alt="" class="img-fluid"></div>
+                                            <div class="title_size-xs text_normal work-item__title">Стань одним из лучших трейдеров</div>
+                                            <p class="text_size-sm text_dark">Пока вы отдыхаете  профессиональные трейдеры зарабатывают деньги</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /work-section -->
+                        </div>
+                        <!-- /public -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /about-section -->
+        <!-- guide-section -->
+        <div class="guide-section mb-xs">
+            <div class="container">
+                <div class="title_size-sm text_center text_normal mb-xs no-change">Полная инструкция по публичному трейдингу</div>
+                <div class="embed-responsive video-block">
+                    <video id="video" poster="video/poster.svg">
+                        <source src="video/example.webm" type="video/webm">
+                        <source src="video/example.mp4" type="video/mp4">
+                    </video>
+                    <div class="play-btn"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /guide-section -->
+        <div class="dots-block mb-md pt-0">
+            <div class="dots-block__item"></div>
+            <div class="dots-block__item"></div>
+            <div class="dots-block__item"></div>
+        </div>
+        <!-- promotion-section -->
+        <div class="container">
+            <div class="promotion-section d-md-flex align-items-center mb-lg">
+                <div class="promotion-section__text">
+                    <div class="promotion-section__title mb-sm">
+                        <div class="text_upper text_bold">Получай <br class="d-md-none"><span class="text_secondary">7% бонуса</span></div>
+                        <div class="text_normal">за каждого реферала</div>
+                    </div>
+                    <p>У вас будет реферальная ссылка, по которой вы сможете приглашать пользователей и получать 7% дохода с каждого реферала</p>
+                </div>
+                <div class="promotion-section__image"><img src="img/promotion.svg" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+        <!-- /promotion-section -->
+        <!-- statistics-section -->
+        <div class="statistics-section bg_radial">
+            <div class="container">
+                <div class="title_size-sm text_center text_normal mb-lg no-change no-change_margin">Статистика нашего проекта</div>
+                <div class="d-flex flex-wrap statistics-section__row">
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-people"></div></div>
+                            <div class="text_normal">Кол-во трейдеров</div>
+                        </div>
+                        <div class="statistics-item__num">30</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-people-more"></div></div>
+                            <div class="text_normal">Кол-во инвесторов</div>
+                        </div>
+                        <div class="statistics-item__num">1.000</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-transger"></div></div>
+                            <div class="text_normal">Кол-во сделок</div>
+                        </div>
+                        <div class="statistics-item__num">14.000</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-wallet-double"></div></div>
+                            <div class="text_normal">Объем инвестиций</div>
+                        </div>
+                        <div class="statistics-item__num">$ 14M</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /statistics-section -->
+        <!-- statistics-tabs -->
+        <div class="statistics-tabs">
+            <div class="container">
+                <div class="tab-section">
+                    <ul class="tab-nav d-flex">
+                        <li class="tab-nav__item"><a href="#best" class="tab-link tab-nav__link active"><span class="tab-nav__icon icon icon-trophy"></span>Лучшие трейдеры</a></li>
+                        <li class="tab-nav__item"><a href="#last" class="tab-link tab-nav__link"><span class="tab-nav__icon icon icon-ticket"></span>Последние сделки</a></li>
+                    </ul>
+                    <div class="tab-content tab-content_padding">
+                        <div class="tab-pane active" id="best">
+                            <div class="table-responsive">
+                                <table class="table statistics-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Пользователь</th>
+                                            <th>Биржа</th>
+                                            <th>Доход за месяц</th>
+                                            <th>Уровень риска</th>
+                                            <th>Подписчики</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-1.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-up me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-2.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-down me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-up me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-up me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-5.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-down me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="last">
+                            <div class="table-responsive">
+                                <table class="table statistics-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Пользователь</th>
+                                            <th>Биржа</th>
+                                            <th>Доход за месяц</th>
+                                            <th>Уровень риска</th>
+                                            <th>Подписчики</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-1.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-up me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-2.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-down me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-up me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-up me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-card d-inline-flex align-items-center">
+                                                <div class="user-card__image circle-image circle-image_md ">
+                                                    <img src="img/content/user-5.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="user-card__text">
+                                                    <p class="text_normal">Alexander</p>
+                                                    <p class="text_dark text_size-xs">Morgan</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-binance me-1"></span>Binance</div>
+                                            </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-arrow-down me-1"></span>84%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span class="icon icon-user-primary me-1"></span>97,451
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /statistics-tabs -->
+        <!-- team -->
+        <div class="team-section section-before">
+            <div class="container">
+                <div class="text_center title_size-lg mb-xs text_mediumbold">Наша команда</div>
+                <div class="title-after text_dark mb-xl text_center">Платформа управления инвестициями на рынке криптовалют которая позволяет частным инвеострам копировать реальтные сделки умспешных трейдеров</div>
+                <div class="row row_lg">
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="team-item__text">
+                                <div class="team-item__name text_size-md text_normal">Alexander Morgan</div>
+                                <div class="text_dark text_size-sm">UX Designer</div>
+                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="team-item__image"><img src="img/content/team-1.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="team-item__text">
+                                <div class="team-item__name text_size-md text_normal">Vladimir Wermoot</div>
+                                <div class="text_dark text_size-sm">Developer</div>
+                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="team-item__image"><img src="img/content/team-2.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="team-item__text">
+                                <div class="team-item__name text_size-md text_normal">Alexander Morgan</div>
+                                <div class="text_dark text_size-sm">Marketing specialist</div>
+                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="team-item__image"><img src="img/content/team-3.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /team -->
+        <!-- faq -->
+        <div class="faq-section mb-md">
+            <div class="container">
+                <div class="text_center title_size-md mb-md text_mediumbold">Ответы на часто задаваемые вопросы</div>
+                <div class="box bg_inversion">
+                    <div class="faq-item active">
+                        <div class="faq-item__icon icon icon-question"></div>
+                        <div class="faq-item__title text_normal">Чем занимается компания My Traders ?</div>
+                        <a href="#faq-1" class="faq-item__link collapse-link active"></a>
+                        <div class="faq-item__body text_size-sm text_dark" id="faq-1">
+                            <p>Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__icon icon icon-question"></div>
+                        <div class="faq-item__title text_normal">Я не нашел информацию по теме  инвестиции в майнинг что делать?</div>
+                        <a href="#faq-2" class="faq-item__link collapse-link"></a>
+                        <div class="faq-item__body collapse text_size-sm text_dark" id="faq-2">
+                            <p>Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                            <p>Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__icon icon icon-question"></div>
+                        <div class="faq-item__title text_normal">Когда я спрашиваю гугл как дела он всегда говорить что у всех все хорошо</div>
+                        <a href="#faq-3" class="faq-item__link collapse-link"></a>
+                        <div class="faq-item__body collapse text_size-sm text_dark" id="faq-3">
+                            <p>Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__icon icon icon-question"></div>
+                        <div class="faq-item__title text_normal">Навожу курсор на кнопку а она хитро угинается, как нажать?</div>
+                        <a href="#faq-4" class="faq-item__link collapse-link"></a>
+                        <div class="faq-item__body collapse text_size-sm text_dark" id="faq-4">
+                            <p>Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item__icon icon icon-question"></div>
+                        <div class="faq-item__title text_normal">Когда я спрашиваю гугл как дела он всегда говорить что у всех все хорошо</div>
+                        <a href="#faq-5" class="faq-item__link collapse-link"></a>
+                        <div class="faq-item__body collapse text_size-sm text_dark" id="faq-5">
+                            <p>Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /faq -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer-nav d-lg-flex text_size-sm">
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Пассивный заработок</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Трейдинг</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доходы и безопасность</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обратная связь</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Privact Policy</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Terms and Conditions</a></li>
+                </ul>
+                <div class="footer__content d-flex text_size-sm align-items-center">
+                    <div class="d-flex">
+                        <a href="index.html" class="logo footer__logo"><div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div></a>
+                        <div class="copyright">
+                            <div class="text_normal">Copyright © 2022</div>
+                            <div class="text_dark">Все права защищены. </div>
+                        </div>
+                    </div>
+                    <div class="d-lg-flex footer__contacts d-none">
+                        <a href="tel:" class="d-flex align-items-center">
+                            <span class="icon icon-phone-primary me-1"></span>
+                            +7 (813) 828-39-13
+                        </a>
+                        <a href="mailto:support@mytraders.com" class="d-flex align-items-center text_primary">
+                            <span class="icon icon-email-primary me-1"></span>
+                            support@mytraders.com
+                        </a>
+                        <div class="d-flex align-items-center text_dark">
+                            <span class="icon icon-pin-primary me-1"></span>
+                            ул. Хмельна 9, 00-021 Варшава
+                        </div>
+                    </div>
+                    <a href="#wrap" class="up-link icon icon-arrow-top-primary"></a>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+    <!-- login -->
+    <div class="modal fade" id="login">
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    Вход
+                    <button type="button" class="icon modal__close icon-close-circle"></button>
+                </div>
+                <div class="tab-section">
+                    <ul class="tab-nav tab-nav_sm d-flex">
+                        <li class="tab-nav__item"><a href="#passive-login" class="tab-link tab-nav__link active">Пассивный заработок</a></li>
+                        <li class="tab-nav__item"><a href="#public-login" class="tab-link tab-nav__link">Публичный трейдинг</a></li>
+                    </ul>
+                    <div class="modal__body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="passive-login">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label class="form-label">
+                                            <span class="icon icon-email-primary form-icon"></span>
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">
+                                            <span class="icon icon-lock-primary form-icon"></span>
+                                            <input type="password" class="form-control" placeholder="Пароль">
+                                        </label>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p><button class="btn btn_size-sm-large">Войти</button></p>
+                                        <p class="text_center_sm"><a href="#" class="text_dark text_size-sm text_normal">Забыли пароль?</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="public-login">
+                                <div class="tab-pane active" id="passive-login">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                <span class="icon icon-email-primary form-icon"></span>
+                                                <input type="email" class="form-control" placeholder="E-mail">
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                <span class="icon icon-phone-primary form-icon"></span>
+                                                <input type="tel" class="form-control" placeholder="Телефон">
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                <span class="icon icon-lock-primary form-icon"></span>
+                                                <input type="password" class="form-control" placeholder="Пароль">
+                                            </label>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p><button class="btn btn_size-sm-large">Войти</button></p>
+                                            <p class="text_center_sm"><a href="#" class="text_dark text_size-sm text_normal">Забыли пароль?</a></p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer d-flex justify-content-between text_size-sm text_normal text_center_sm">
+                        <p class="text_dark">Еще нет аккаунта?</p>
+                        <p><a href="#registration" class="modal-open">Зарегистрироваться</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /login -->
+
+    <!-- registration -->
+    <div class="modal fade" id="registration">
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    Регистрация Инвестора
+                    <button type="button" class="icon modal__close icon-close-circle"></button>
+                </div>
+                <div class="tab-section">
+                    <ul class="tab-nav tab-nav_sm d-flex">
+                        <li class="tab-nav__item"><a href="#passive-investor" class="tab-link tab-nav__link active">Пассивный инвестор</a></li>
+                        <li class="tab-nav__item"><a href="#public-trader" class="tab-link tab-nav__link">Публичный трейдер</a></li>
+                    </ul>
+                    <div class="modal__body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="passive-investor">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label class="form-label">
+                                            <span class="icon icon-email-primary form-icon"></span>
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">
+                                            <span class="icon icon-lock-primary form-icon"></span>
+                                            <input type="password" class="form-control" placeholder="Пароль">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">
+                                            <span class="icon icon-lock-primary form-icon"></span>
+                                            <input type="password" class="form-control" placeholder="Пароль еще раз">
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn_size-sm-large w-100">Зарегистрировать</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="public-trader">
+                                <div class="tab-pane active" id="passive-login">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                <span class="icon icon-email-primary form-icon"></span>
+                                                <input type="email" class="form-control" placeholder="E-mail">
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                <span class="icon icon-lock-primary form-icon"></span>
+                                                <input type="password" class="form-control" placeholder="Пароль">
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">
+                                                <span class="icon icon-lock-primary form-icon"></span>
+                                                <input type="password" class="form-control" placeholder="Пароль еще раз">
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn_size-sm-large w-100">Зарегистрировать</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer d-flex justify-content-between text_size-sm text_normal text_center_sm">
+                        <p class="text_dark">У вас уже есть аккаунт?</p>
+                        <p><a href="#login" class="modal-open">Войти</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /registration -->
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
