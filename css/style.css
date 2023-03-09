@@ -5943,6 +5943,7 @@ textarea.form-control {
   background: none;
   font-size: 1.6rem;
   padding-left: 5.6rem !important;
+  padding-top: 1.9rem;
 }
 
 @media only screen and (min-width: 992px) {
