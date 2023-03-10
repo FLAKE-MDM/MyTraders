@@ -1,0 +1,51 @@
+.about{
+    &-section{
+        &:before{
+            top: 7.2rem;
+        }
+    }
+    &-item{
+        justify-content: space-between;
+        &_margin{
+            margin-bottom: 1.2rem;
+        }
+        &__image{
+            width: 37.5%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: flex-end;
+            @include bp(xl-up){
+                margin-left: -0.8rem;
+                &.order-md-2{
+                    margin: 0 -0.6rem 0 0;
+                }
+                &_margin{
+                    margin: -0.3rem 0 0 -1.2rem;
+                }
+            }
+            @include bp(sm){
+                margin: 0 -7.2% 0 -5.6%;
+                width: auto;
+                display: flex;
+                justify-content: center;
+            }
+            &_margin-mobile{
+                @include bp(sm){
+                    margin: -3.1rem -5.8% 0 -5.6%;
+                    width: auto;
+                }
+            }
+        }
+        &__text{
+            width: 60%;
+            padding-top: 1.9rem;
+            @include bp(sm){
+                width: 100%;
+                padding-top: 4.8rem;
+            }
+            &_padding{
+                padding-top: 1.1rem;
+            }
+        }
+    }
+}

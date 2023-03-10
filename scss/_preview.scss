@@ -1,0 +1,103 @@
+.preview-section{
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -3.8rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url(../img/bg-preview.png) 50% 0;
+        @include bp(xl){
+            top: 0;
+        }
+        @include bp(md){
+            display: none;
+        }
+    }
+    &__text{
+        padding: 11.8rem 0 16rem;
+        width: 65%;
+        position: relative;
+        z-index: 2;
+        @include bp(lg){
+            padding: 5rem 0 2rem;
+        }
+        @include bp(sm){
+            width: 100%;
+            padding: 0.3rem 0 0;
+        }
+    }
+    &__image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: -2.2rem -27.2% 0 0;
+        @include bp(lg){
+            width: 83%;
+            margin: 0 -14% 0 0;
+        }
+        @include bp(md){
+            order: -1;
+            position: static;
+            width: auto;
+            margin: -5.2rem -28.5% 0 -33.5%;
+        }
+        @include bp(sm){
+            margin-left: -44.5%;
+        }
+    }
+    &__check-list{
+        max-width: 35rem;
+    }
+    &__btn-group{
+        @include bp(sm){
+            margin-top: 3rem;
+            justify-content: space-between;
+        }
+        .btn{
+            margin-right: 3.2rem;
+            @include bp(sm){
+                margin-right: 1rem;
+                padding: 1.8rem 4.2rem 1.7rem;
+            }
+        }
+        a{
+            @include bp(sm){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+.rating-block{
+    margin-top: 4.8rem;
+    @include bp(sm){
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    &__logo{
+        margin-right: 1.5rem;
+    }
+}
+.check-list{
+    &__item{
+        position: relative;
+        margin-bottom: 4.8rem;
+        padding-left: 5.6rem;
+        @include bp(sm){
+            margin-bottom: 2rem;
+        }
+        &:before{
+            content: '';
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            background: url(../img/icons/circle-check.svg) 0 0 no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+        }
+    }
+}

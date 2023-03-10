@@ -3,5 +3,5 @@
 /dist
 /apexcharts-bundle
 /Chart.js
-/scss
+# /scss
 /макеты

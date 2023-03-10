@@ -1,0 +1,59 @@
+.promotion{
+    &-section{
+        background: linear-gradient(285.71deg, rgba(0, 199, 255, 0.2) 23.14%, rgba(0, 199, 255, 0) 52.15%), #583AFB;
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        padding: 1.8rem 45px 1.3rem;
+        color: #fff;
+        line-height: 2.7rem;
+        @include bp(sm){
+            padding: 0.7rem 2rem 0;
+            margin-bottom: 4.8rem!important;
+        }
+        &:before, &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+        }
+        &:before{
+            left: 0;
+            width: 20%;
+            background: url(../img/promotion-before.svg) 0 100% no-repeat;
+            background-size: contain;
+        }
+        &:after{
+            right: 0;
+            width: 52%;
+            background: url(../img/promotion-after.svg) 100% 0 no-repeat;
+            background-size: contain;
+        }
+        &__text{
+            text-align: center;
+            width: 60%;
+            padding: 1.2rem 0 0 2.2rem;
+            @include bp(md){
+                padding-left: 0;
+            }
+            @include bp(sm){
+                width: 100%;
+            }
+        }
+        &__image{
+            width: 41%;
+            flex-shrink: 0;
+            @include bp(sm){
+                width: auto;
+                margin: -3.7rem -7% 0.9rem -21%;
+            }
+        }
+        &__title{
+            font-size: 4.3rem;
+            line-height: 4.9rem;
+        }
+    }
+}

@@ -1,0 +1,1046 @@
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: 0 0;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    &_margin{
+        &-s{
+            margin-left: 0.8rem;
+            &-md{
+                margin-left: 1.6rem;
+            }
+        }
+        &-e{
+            margin-right: 0.8rem;
+        }
+    }
+}
+.icon-user-circle{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../img/icons/user-circle.svg);
+}
+.icon-arrow-right{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/arrow-right.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/arrow-right-secondary.svg);
+    }
+}
+a:hover .icon-arrow-right{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-wallet{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/wallet.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/wallet-primary.svg);
+    }
+}
+a:hover .icon-wallet, a.active .icon-wallet{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-candlestick{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/candlestick.svg);
+    &_sm{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
+.icon-people{
+    background-image: url(../img/icons/people.svg);
+}
+.icon-people-more{
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url(../img/icons/people-more.svg);
+}
+.icon-transger{
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url(../img/icons/transger.svg);
+}
+.icon-wallet-double{
+    background-image: url(../img/icons/wallet-double.svg);
+}
+.icon-ticket{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/ticket.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/ticket-primary.svg);
+    }
+}
+a:hover .icon-ticket, a.active .icon-ticket{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-trophy{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/trophy.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/trophy-primary.svg);
+    }
+}
+a:hover .icon-trophy, a.active .icon-trophy{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-binance{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/binance.svg);
+}
+.icon-ethersocial{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/ethersocial.svg);
+}
+.icon-GameCredits{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/GameCredits.svg);
+}
+.icon-NanoCoins{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/NanoCoins.svg);
+}
+.icon-ripple{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/ripple.svg);
+}
+.icon-{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/.svg);
+}
+.icon-arrow-up{
+    background-image: url(../img/icons/arrow-up.svg);
+}
+.icon-arrow-down{
+    background-image: url(../img/icons/arrow-down.svg);
+}
+.icon-user-primary{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/icons/user-primary.svg);
+}
+.icon-user{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/icons/user.svg);
+}
+.icon-question{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/question.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/question-primary.svg);
+    }
+}
+.active .icon-question{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-phone-primary{
+    background-image: url(../img/icons/phone-primary.svg);
+}
+.icon-email-primary{
+    background-image: url(../img/icons/email-primary.svg);
+}
+.icon-pin-primary{
+    background-image: url(../img/icons/pin-primary.svg);
+}
+.icon-arrow-top-primary{
+    background-image: url(../img/icons/arrow-top-primary.svg);
+}
+.icon-close-circle{
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/close-circle.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/close-circle-primary.svg);
+    }
+}
+.icon-lock-primary{
+    background-image: url(../img/icons/lock-primary.svg);
+}
+.icon-widget{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/widget.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/widget-primary.svg);
+    }
+}
+.icon-widget-double{
+    background-image: url(../img/icons/widget-double.svg);
+}
+a:hover .icon-widget, a.active .icon-widget{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-chart{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/chart.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/chart-primary.svg);
+    }
+}
+a:hover .icon-chart, a.active .icon-chart{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-shield{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/shield.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/shield-primary.svg);
+    }
+}
+a:hover .icon-shield, a.active .icon-shield{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-bag{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/bag.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/bag-primary.svg);
+    }
+}
+a:hover .icon-bag, a.active .icon-bag{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-chat{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/chat.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/chat-primary.svg);
+    }
+}
+a:hover .icon-chat, a.active .icon-chat{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-off{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/off.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/off-primary.svg);
+    }
+}
+a:hover .icon-off, a.active .icon-off{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-chart-double{
+    background-image: url(../img/icons/chart-double.svg);
+}
+.icon-search-primary{
+    background-image: url(../img/icons/search-primary.svg);
+}
+.icon-caret-next{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/caret-next.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/caret-next-secondary.svg);
+    }
+}
+a:hover .icon-caret-next{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-caret-left{
+    height: 1.8rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/caret-left.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/caret-left-secondary.svg);
+    }
+}
+a:hover .icon-caret-left{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-caret-right{
+    height: 1.8rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/caret-right.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/caret-right-secondary.svg);
+    }
+}
+a:hover .icon-caret-right{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-pay-bank{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/pay-bank.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/pay-bank-colored.svg);
+    }
+}
+label:hover .icon-pay-bank, .active .icon-pay-bank{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-pay-bitcoin{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/pay-bitcoin.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/pay-bitcoin-colored.svg);
+    }
+}
+label:hover .icon-pay-bitcoin, .active .icon-pay-bitcoin{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-pay-ethereum{
+    width: 2.1rem;
+    height: 3.2rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/pay-ethereum.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/pay-ethereum-colored.svg);
+    }
+}
+label:hover .icon-pay-ethereum, .active .icon-pay-ethereum{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-pay-tether{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/pay-tether.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/pay-tether-colored.svg);
+    }
+}
+label:hover .icon-pay-tether, .active .icon-pay-tether{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-chat-double{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/chat-double.svg);
+}
+.icon-chat-add-primary{
+    background-image: url(../img/icons/chat-add-primary.svg);
+}
+.icon-chat-primary-support{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/chat-primary-support.svg);
+}
+.icon-file{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/file.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/file-primary.svg);
+    }
+}
+label:hover .icon-file{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-plane{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/plane.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/plane-primary.svg);
+    }
+}
+button:hover .icon-plane{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-shield-double{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/shield-double.svg);
+}
+.icon-bag-double{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/bag-double.svg);
+}
+.icon-link-primary{
+    background-image: url(../img/icons/link-primary.svg);
+}
+.icon-copy{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/copy.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/copy-primary.svg);
+    }
+}
+a:hover .icon-copy{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+
+.icon-wallet-double-second{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/wallet-double-second.svg);
+}
+.icon-ethereum{
+    background-image: url(../img/icons/ethereum.svg);
+}
+.icon-wallet-minus-double{
+    background-image: url(../img/icons/wallet-minus-double.svg);
+}
+.icon-wallet-plus-double{
+    background-image: url(../img/icons/wallet-plus-double.svg);
+}
+.icon-wallet-minus{
+    background-image: url(../img/icons/wallet-minus.svg);
+}
+.icon-wallet-fill{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/wallet-fill.svg);
+}
+.icon-cash-fill{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/cash-fill.svg);
+}
+.icon-wallet-fill-summ{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/wallet-fill-summ.svg);
+}
+.icon-arrow-right-primary{
+    width: 1.4rem;
+    height: 1rem;
+    background-image: url(../img/icons/arrow-right-primary.svg);
+}
+.icon-user-fill{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/user-fill.svg);
+}
+.icon-chart-fill{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url(../img/icons/chart-fill.svg);
+}
+.icon-info-double{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/info-double.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/info-primary.svg);
+    }
+}
+a:hover .icon-info-double, .open .info-double{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-info{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/info.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/info-primary.svg);
+    }
+}
+a:hover .icon-info{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-dots{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/dots.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/dots-secondary.svg);
+    }
+}
+a:hover .icon-dots, .open .icon-dots{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-download{
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/download.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/download-primary.svg);
+    }
+}
+a:hover .icon-download{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-arrow-separator{
+    width: 0.9rem;
+    height: 0.9rem;
+    background-image: url(../img/icons/arrow-separator.svg);
+}
+.icon-tether{
+    background-image: url(../img/icons/tether.svg);
+}
+.icon-login{
+    position: relative;
+    &.active{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/login.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/close.svg);
+    }
+}
+.icon-filters{
+    position: relative;
+    &.active{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/filters.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/filters-primary.svg);
+    }
+}
+.icon-filters-primary{
+    background-image: url(../img/icons/filters-primary.svg);
+}

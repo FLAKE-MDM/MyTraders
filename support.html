@@ -12,17 +12,98 @@
 </head>
 <body>
     <div class="wrap" id="wrap">
-        <div class="d-flex content">
+        <!-- header -->
+        <header class="header d-flex d-xl-none align-items-center">
+            <a href="/" class="logo header__logo d-flex align-items-center">
+                <div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div>
+                <div class="logo__text"><img src="img/logo-text.svg" alt="" class="img-fluid"></div>
+            </a>
+            <nav class="navbar pane d-xl-flex" id="navbar">
+                <ul class="nav-list d-xl-flex align-items-center">
+                    <li class="nav-list__item"><a href="#" class="nav-list__link active">Пасивный заработок</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Трейдинг</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Доходы и безопасность</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Обратная связь</a></li>
+                    <li class="nav-list__item">
+                        <div class="fake-select language dropdown">
+                            <a href="#" class="fake-select__link dropdown-toggle">
+                                <span class="fake-select__value">
+                                    <span class="d-none d-xl-block">UA</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/ua.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">Украинский</div>
+                                    </div>
+                                </span>
+                            </a>
+                            <div class="fake-select__dropdown dropdown-menu">
+                                <label class="fake-select__item">
+                                    <input type="radio" class="collapse" name="language">
+                                    <span class="d-none d-xl-block">RU</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/ru.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">Русский</div>
+                                    </div>
+                                </label>
+                                <label class="fake-select__item active">
+                                    <input type="radio" class="collapse" name="language">
+                                    <span class="d-none d-xl-block">UA</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/ua.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">Украинский</div>
+                                    </div>
+                                </label>
+                                <label class="fake-select__item">
+                                    <input type="radio" class="collapse" name="language">
+                                    <span class="d-none d-xl-block">EN</span>
+                                    <div class="d-xl-none d-flex align-items-center">
+                                        <div class="language__icon">
+                                            <img src="img/icons/gb.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="language__text">English</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="#aside" class="login__mobile-link pane-open icon d-xl-none icon-login"></a>
+            </div>
+            <a href="#navbar" class="btn-menu pane-open d-xl-none">
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+            </a>
+        </header>
+        <!-- /header -->
+        <div class="d-xl-flex content">
             <!-- aside -->
             <aside class="aside pane pane_left" id="aside">
-                <a href="index.html" class="logo aside__logo d-flex align-items-center mb-md">
+                <a href="/" class="logo aside__logo d-none d-xl-flex align-items-center mb-md">
                     <div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div>
                     <div class="logo__text"><img src="img/logo-text.svg" alt="" class="img-fluid"></div>
                 </a>
+                <div class="user-info d-flex align-items-center d-xl-none justify-content-between">
+                    <a href="#profile" class="d-flex align-items-center user-info__dropdown-toggle modal-open">
+                        <div class="user-info__image"><img src="img/content/user-2.jpg" alt=""></div>
+                        <div class="user-info__text">
+                            <div class="text_normal user-info__name text_size-sm">Alexander Morgan</div>
+                            <div class="text_primary text_mediumbold">3054.45 $</div>
+                        </div>
+                    </a>
+                    <a href="#balance" class="btn btn_size-xs modal-open">Пополнить</a>
+                </div>
                 <ul class="menu-list mb-md">
                     <li class="menu-list__item">
                         <a href="personal-cabinet.html" class="menu-list__link">
-                            <span class="icon icon-widget menu-list__icon"></span>Главная
+                            <span class="icon icon-widget menu-list__icon"></span>Панель
                         </a>
                     </li>
                     <li class="menu-list__item">
@@ -66,16 +147,11 @@
             <main class="main">
                 <!-- main__header -->
                 <div class="main__header d-flex align-items-center">
-                    <a href="#aside" class="btn-menu main__btn-menu pane-open d-xl-none">
-                        <div class="btn-menu__item"></div>
-                        <div class="btn-menu__item"></div>
-                        <div class="btn-menu__item"></div>
-                    </a>
                     <div class="main__title text_mediumbold text_upper d-flex align-items-center">
                         <span class="icon icon-chat-double"></span>
                         Поддержка
                     </div>
-                    <div class="fake-select main__language language dropdown">
+                    <div class="fake-select main__language language dropdown d-none d-xl-block">
                         <a href="#" class="fake-select__link dropdown-toggle">
                             <span class="fake-select__value">
                                 <div class="language__icon"><img src="img/icons/ua.svg" alt="" class="img-fluid"></div>
@@ -96,7 +172,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="user-info">
+                    <div class="user-info d-none d-xl-block">
                         <a href="#profile" class="d-flex align-items-center user-info__dropdown-toggle modal-open">
                             <div class="user-info__image"><img src="img/content/user-2.jpg" alt=""></div>
                             <div class="user-info__text">
@@ -105,111 +181,117 @@
                             </div>
                         </a>
                     </div>
-                    <a href="#balance" class="btn btn_size-xs modal-open">Пополнить</a>
+                    <a href="#balance" class="d-none d-xl-inline-flex btn btn_size-xs modal-open">Пополнить</a>
                 </div>
                 <!-- /main__header -->
                 <div class="box box_bordered">
-                    <div class="d-md-flex justify-content-between box__heading">
+                    <div class="d-flex justify-content-between box__heading">
                         <div class="text_mediumbold text_upper box__title">Ваши тикеты</div>
                         <a href="#" class="text_normal text_size-sm d-inline-flex align-items-center">
                             <span class="icon icon-chat-add-primary me-2"></span>Открыть тикет
                         </a>
                     </div>
-                    <table class="table table_sm text_left mobile-table">
-                        <thead>
-                            <tr>
-                                <th>Номер</th>
-                                <th>Сообщение</th>
-                                <th>Дата</th>
-                                <th>Статус</th>
+                    <div class="table-responsive">
+                        <table class="table table_sm text_left">
+                            <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th>Сообщение</th>
+                                    <th>Дата</th>
+                                    <th>Статус</th>
+                                </tr>
+                            </thead>
+                            <tbody><tr>
+                                <td>0000001</td>
+                                <td>
+                                    <a href="ticket.html" class="d-flex align-items-center">
+                                        <span class="icon icon-chat-primary-support me-1"></span>
+                                        Не работает кнопка профиля из за чего не могу зайти 
+                                    </a>
+                                </td>
+                                <td><div class="nowrap">21 Марта 2022</div></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="dot me-2 bg_success"></div>
+                                        Сообщение
+                                    </div>
+                                </td>
                             </tr>
-                        </thead>
-                        <tr>
-                            <td>0000001</td>
-                            <td>
-                                <a href="ticket.html" class="d-flex align-items-center">
-                                    <span class="icon icon-chat-primary-support me-1"></span>
-                                    Не работает кнопка профиля из за чего не могу зайти 
-                                </a>
-                            </td>
-                            <td><div class="nowrap">21 Марта 2022</div></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="dot me-2 bg_success"></div>
-                                    Сообщение
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>0000002</td>
-                            <td>
-                                <a href="ticket.html" class="d-flex align-items-center">
-                                    <span class="icon icon-chat-primary-support me-1"></span>
-                                    Не работает кнопка профиля из за чего не могу зайти 
-                                </a>
-                            </td>
-                            <td><div class="nowrap">21 Марта 2022</div></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="dot me-2 bg_warning"></div>
-                                    Ожидает
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>0000003</td>
-                            <td>
-                                <a href="ticket.html" class="d-flex align-items-center">
-                                    <span class="icon icon-chat-primary-support me-1"></span>
-                                    Не работает кнопка профиля из за чего не могу зайти 
-                                </a>
-                            </td>
-                            <td><div class="nowrap">21 Марта 2022</div></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="dot me-2 bg_danger"></div>
-                                    Закрыт
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>0000004</td>
-                            <td>
-                                <a href="ticket.html" class="d-flex align-items-center">
-                                    <span class="icon icon-chat-primary-support me-1"></span>
-                                    Не работает кнопка профиля из за чего не могу зайти 
-                                </a>
-                            </td>
-                            <td><div class="nowrap">21 Марта 2022</div></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="dot me-2 bg_danger"></div>
-                                    Закрыт
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>0000005</td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <span class="icon icon-chat-primary-support me-1"></span>
-                                    Не работает кнопка профиля из за чего не могу зайти 
-                                </div>
-                            </td>
-                            <td><div class="nowrap">21 Марта 2022</div></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="dot me-2 bg_danger"></div>
-                                    Закрыт
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>0000002</td>
+                                <td>
+                                    <a href="ticket.html" class="d-flex align-items-center">
+                                        <span class="icon icon-chat-primary-support me-1"></span>
+                                        Не работает кнопка профиля из за чего не могу зайти 
+                                    </a>
+                                </td>
+                                <td><div class="nowrap">21 Марта 2022</div></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="dot me-2 bg_warning"></div>
+                                        Ожидает
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0000003</td>
+                                <td>
+                                    <a href="ticket.html" class="d-flex align-items-center">
+                                        <span class="icon icon-chat-primary-support me-1"></span>
+                                        Не работает кнопка профиля из за чего не могу зайти 
+                                    </a>
+                                </td>
+                                <td><div class="nowrap">21 Марта 2022</div></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="dot me-2 bg_danger"></div>
+                                        Закрыт
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0000004</td>
+                                <td>
+                                    <a href="ticket.html" class="d-flex align-items-center">
+                                        <span class="icon icon-chat-primary-support me-1"></span>
+                                        Не работает кнопка профиля из за чего не могу зайти 
+                                    </a>
+                                </td>
+                                <td><div class="nowrap">21 Марта 2022</div></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="dot me-2 bg_danger"></div>
+                                        Закрыт
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0000005</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon icon-chat-primary-support me-1"></span>
+                                        Не работает кнопка профиля из за чего не могу зайти 
+                                    </div>
+                                </td>
+                                <td><div class="nowrap">21 Марта 2022</div></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="dot me-2 bg_danger"></div>
+                                        Закрыт
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    
                 </div>
             </main>
             <!-- /main -->
         </div>
-        <a href="#" class="pane-close pane-close__link"></a>
+        <div class="copyright text_size-sm text_center copyright_bottom d-xl-none">
+            <span class="text_normal">Copyright © 2022</span>
+            <span class="text_dark">Все права защищены. </span>
+        </div>
     </div>
 
     <!-- profile -->
@@ -218,7 +300,7 @@
             <div class="modal__content">
                 <div class="modal__header text_mediumbold text_upper">
                     Профиль
-                    <button type="button" class="icon modal__close icon-close-circle"></button>
+                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
                 </div>
                 <div class="modal__user-card user-card d-flex align-items-center">
                     <div class="user-card__image circle-image circle-image_lg">
@@ -272,7 +354,7 @@
             <div class="modal__content">
                 <div class="modal__header text_mediumbold text_upper">
                     Пополнение баланса
-                    <button type="button" class="icon modal__close icon-close-circle"></button>
+                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
                 </div>
                 <div class="modal__body modal__body_padding">
                     <form action="#">
@@ -315,15 +397,15 @@
         </div>
     </div>
     <!-- /balance -->
-    
+
 
 
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/stacktable.js"></script>
     <script src="js/nouislider.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

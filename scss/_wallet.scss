@@ -1,0 +1,40 @@
+.balance{
+    &-block{
+        @include bp(sm){
+            flex-wrap: wrap;
+        }
+        &__buttons{
+            @include bp(sm){
+                width: 100%;
+                margin-top: 1rem;
+            }
+            .btn:first-of-type{
+                @include bp(xs){
+                    margin: 0 0 1rem;
+                }
+            }
+        }
+        &__image{
+            margin-right: 2.4rem;
+            flex-shrink: 0;
+        }
+        &__text{
+            margin-right: auto;
+        }
+        &__title{
+            margin: -0.2rem 0 0.6rem;
+        }
+    }
+}
+.detail{
+    width: 24.8rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include bp(md){
+        width: 18rem;
+    }
+    @include bp(xs){
+        width: 14rem;
+    }
+}

@@ -1,0 +1,116 @@
+.info-block{
+    padding-bottom: 2rem;
+    @include bp(xl){
+        padding: 1.5rem;
+    }
+    &__icon{
+        width: 5.2rem;
+        height: 5.2rem;
+        margin-right: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(225deg, #E5E8ED -25%, #F7F8FA 105.01%);
+        border-radius: 12px;
+        flex-shrink: 0;
+        @include bp(xl){
+            margin-right: 1.5rem;
+        }
+        &_sm{
+            margin-right: 1.4rem;
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+    }
+    &__text{
+        flex-grow: 1;
+        @include bp(xxl-up){
+            margin-right: 0.6rem;
+        }
+        @include bp(md){
+            max-width: 20rem;
+        }
+    }
+    &__price{
+        font-size: 2.4rem;
+        line-height: 1.8rem;
+        white-space: nowrap;
+        @include bp(xl){
+            font-size: 2.2rem;
+        }
+    }
+    &__title{
+        margin: -0.2rem 0 1.2rem;
+        &-lg{
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin-bottom: 0.6rem;
+        }
+    }
+}
+.legend{
+    &-item{
+        @include bp(xl-up){
+            margin-right: -0.7rem;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 3rem;
+        }
+        .icon-arrow-up, .icon-arrow-down{
+            margin-left: 0.5rem;
+        }
+    }
+}
+.btn-nav{
+    margin: -0.2rem -0.7rem;
+    @include bp(sm){
+        margin-left: 0.5rem;
+    }
+    &__link{
+        font-weight: 400;
+        color: $dark;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        padding: 0.35rem 0.8rem;
+        border-radius: 50px;
+        white-space: nowrap;
+        &:hover, &.active{
+            color: #fff;
+            background: $primary;
+        }
+    }
+}
+.apexcharts-tooltip{
+    background: rgba(247, 248, 250, 0.5)!important;
+    border: 1px solid rgba(255, 255, 255, 0.1)!important;
+    box-shadow: 0px 4px 16px -7px rgba(88, 58, 251, 0.5), 0px 10px 42px rgba(88, 58, 251, 0.05)!important;
+    backdrop-filter: blur(2.5px);
+    border-radius: 8px!important;
+    padding: 1.6rem 1.6rem 1rem;
+}
+.tooltip{
+    &__num{
+        font: 500 2.1rem/1.8rem 'Inter', sans-serif;
+        margin-bottom: 0.4rem;
+    }
+}
+.apexcharts-tooltip-series-group{
+    background: none!important;
+    color: $black!important;
+    padding: 0!important;
+    width: 100%;
+}
+.apexcharts-tooltip-title{
+    padding: 0!important;
+    margin: 0!important;
+    order: 2;
+    border: none!important;
+    background: none!important;
+    color: $dark!important;
+}
+.apexcharts-tooltip-text-y-value{
+    font: 500 2.1rem/1.8rem 'Inter', sans-serif!important;
+}
+.apexcharts-tooltip-y-group{
+    padding: 0!important;
+}

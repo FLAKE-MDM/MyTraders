@@ -1,0 +1,180 @@
+.header{
+    padding: 3.2rem 6.4rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 5;
+    @include bp(xl){
+        padding: 2rem 1.5rem;
+    }
+    @include bp(lg){
+        padding: 1rem 1rem;
+    }
+    &__logo{
+        .logo__text{
+            @include bp(xl){
+                width: 10rem;
+            }
+            @include bp(md){
+                width: 14.2rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.logo{
+    flex-shrink: 0;
+    &__image{
+        margin-right: 0.9rem;
+        @include bp(lg){
+            width: 4.1rem;
+        }
+    }
+    &__text{
+        margin-bottom: 0.2rem;
+    }
+    &:hover{opacity: 0.7;}
+}
+.login{
+    font-size: 1.5rem;
+    align-self: center;
+    @include bp(lg){
+        margin: 0.5rem 3.3rem 0 auto;
+    }
+    &__separator{
+        margin: 0 0.8rem;
+    }
+    &__image{
+        margin-right: 0.9rem;
+        width: 4.4rem;
+        height: 4.4rem;
+        padding: 0.5rem;
+    }
+    &__mobile-link{
+
+    }
+}
+.navbar{
+    @include bp(xl-up){
+        position: static;
+        padding: 0;
+        background: none;
+        transition: none;
+        overflow: visible;
+        transform: none;
+        width: auto;
+        flex-grow: 1;
+    }
+    @include bp(lg){
+        margin: 0;
+        padding: 0 1rem;
+    }
+    &__close{
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}
+.language{
+    margin-left: 0.3rem;
+    @include bp(lg){
+        margin: 2rem 2rem;
+        display: inline-flex;
+    }
+    &__icon{
+        width: 2.8rem;
+        height: 2rem;
+        border-radius: 4px;
+        overflow: hidden;
+        display: block;
+    }
+    &__text{
+        margin-left: 0.8rem;
+    }
+}
+.nav{
+    &-list{
+        margin: 0.1rem auto 0;
+        @include bp(lg){
+            background: #fff;
+            border-radius: 24px;
+            text-align: center;
+        }
+        &__item{
+            margin: 0 3.2rem;
+            @include bp(xxl){
+                margin: 0 1.5rem;
+            }
+            @include bp(lg){
+                margin: 0;
+                &:not(:last-child){
+                    &:after{
+                        content: '';
+                        display: block;
+                        width: 20rem;
+                        margin: 0 auto;
+                        border-top: 1px solid #EEEFF2;
+                    }
+                }
+            }
+        }
+        &__link{
+            line-height: 1.9rem;
+            display: inline-flex;
+            letter-spacing: 0;
+            color: $dark;
+            &.active{
+                color: $black;
+            }
+            @include bp(xl){
+                font-size: 1.5rem;
+            }
+            @include bp(lg){
+                font-size: 1.6rem;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding: 2.24rem;
+            }
+        }
+    }
+}
+.social-list{
+    padding-top: 0.3rem;
+    &__link{
+        transition: all 0.3s ease-out;
+        &:not(:first-child){
+            margin-left: 2.3rem;
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
+.btn-menu{
+    display: block;
+    border: none;
+    align-self: center;
+    background: none;
+    flex-shrink: 0;
+    margin-right: 0.3rem;
+    transition: all 0.3s ease-out;
+    &.active{
+        transform: rotate(90deg);
+        .btn-menu__item{
+            background: $primary;
+        }
+    }
+    &__item{
+        display: block;
+        width: 1.8rem;
+        height: 0.2rem;
+        border-radius: 5px;
+        background: $black;
+        transition: all 0.3s ease-out;
+    }
+    &__item+&__item{
+        margin-top: 0.3rem;
+    }
+}

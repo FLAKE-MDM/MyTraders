@@ -1,0 +1,142 @@
+.statistics{
+    &-section{
+        padding-bottom: 12.2rem;
+        margin-bottom: -7.2rem;
+        @include bp(sm){
+            padding-bottom: 9.7rem;
+        }
+        &__row{
+            justify-content: space-between;
+        }
+    }
+    &-item{
+        @include bp(md){
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+        @include bp(xs){
+            width: 100%;
+            text-align: center;
+            position: relative;
+            padding: 0.5rem 0 0 4.1rem;
+            .d-flex{
+                justify-content: center;
+            }
+        }
+        .icon-transger{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        &__icon{
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-right: 0.8rem;
+            background: #FFFFFF;
+            border-radius: 12px;
+            position: relative;
+            @include bp(sm){
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                height: 3.2rem;
+                width: 0.8rem;
+                border-left: 1px solid #DADADA;
+                border-bottom: 1px solid #DADADA;
+                margin: 0.8rem auto 0;
+                top: 100%;
+                left: 0;
+                right: 0;
+            }
+        }
+        &__num{
+            font: 700 6rem/7.2rem 'Inter', sans-serif;
+            margin: 0.2rem 0 0 4rem;
+            background: linear-gradient(98.17deg, #00C7FF 0.93%, #583AFB 104.1%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            @include bp(xs){
+                margin: 0.6rem 0 1.4rem;
+            }
+        }
+    }
+    &-table{
+        overflow: hidden;
+        tbody tr:last-of-type td:first-child{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        tbody tr:last-of-type td {
+            padding-bottom: 2.8rem;
+        }
+        td{
+            padding: 2.5rem 1.5rem;
+            &:first-child{
+                padding: 0.6rem 1.5rem 0.4rem;
+                @include bp(sm){
+                    padding-top: 0.65rem;
+                }
+            }
+            @include bp(xl-up){
+                width: 20%;
+            }
+        }
+        th{
+            background: none;
+            border: none;
+            position: relative;
+            padding: 2.2rem 2rem;
+            font-size: 1.6rem;
+            @include bp(sm){
+                padding-top: 1.1rem;
+            }
+            &:not(:last-child){
+                &:before, &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                }
+                &:after{
+                    width: 0.5rem;height: 0.5rem;
+                    border-radius: 1px;
+                    transform: rotate(45deg);
+                    border: 1px solid #E2E0EE;
+                    background: #F7F8FA;
+                    bottom: -0.25rem;
+                    right: -0.2rem;
+                }
+                &:before{
+                    right: 0;
+                    top: 1.5rem;
+                    height: 25rem;
+                    width: 0.1rem;
+                    background: -moz-linear-gradient(top,  rgba(249,237,253,1) 0%, rgba(226,224,238,1) 25%, rgba(239,237,253,0) 100%);
+                    background: -webkit-linear-gradient(top,  rgba(249,237,253,1) 0%,rgba(226,224,238,1) 25%,rgba(239,237,253,0) 100%);
+                    background: linear-gradient(to bottom,  rgba(249,237,253,1) 0%,rgba(226,224,238,1) 25%,rgba(239,237,253,0) 100%); 
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9edfd', endColorstr='#00efedfd',GradientType=0 );
+                }
+            }
+        }
+        tbody{
+            tr{
+                &:nth-of-type(even){background: #FCFCFD;}
+                &:first-of-type td:first-of-type{
+                    border-top-left-radius: 24px;
+                }
+                &:first-of-type td:last-of-type{
+                    border-top-right-radius: 24px;
+                }
+            } 
+        }
+    }
+}

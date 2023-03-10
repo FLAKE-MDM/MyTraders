@@ -1,0 +1,71 @@
+.btn{
+    font: 500 1.6rem/1.9rem 'Roboto', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: 1.45rem 2.44rem;
+    letter-spacing: 0;
+    border-radius: 35px;
+    color: #fff;
+    border: none;
+    background: $primary;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    &:hover{
+        color: #fff;
+        background: $primary - 50;
+    }
+    &:disabled, &.disabled{
+        cursor: default;
+        pointer-events: none;
+        background: gray + 30;
+        color: rgba(#fff, 0.8);
+    }
+    &_light{
+        background: #EEEBFD;
+        color: $black;
+        &:hover{
+            background: #EEEBFD - 30;
+            color: $black;
+        }
+    }
+    &_dark{
+        background: #C1C4D0;
+        &:hover{
+            background: #C1C4D0 - 30;
+        }
+    }
+    &_size{
+        &-xs{
+            font-size: 1.5rem;
+            padding: 1.3rem 2.44rem 1.2rem;
+        }
+        &-sm{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            padding: 1.7rem 3.23rem;
+            &-large{
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                padding: 1.7rem 6.9rem;
+            }
+        }
+        &-smd{
+            font-size: 1.5rem;
+            padding: 1.7rem 3.2rem 1.6rem;
+         }
+        &-md{
+           font-size: 1.5rem;
+           padding: 1.8rem 2.4rem 1.7rem;
+        }
+        &-xl{
+            font-size: 1.8rem;
+            line-height: 2.15rem;
+            padding: 1.8rem 4.025rem 1.6rem;
+        }
+    }
+}
+
+

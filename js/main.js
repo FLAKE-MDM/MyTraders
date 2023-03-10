@@ -3,15 +3,15 @@
 // pane
 $('.pane-open').click(function(e){
   e.preventDefault();
-  $('body').removeClass('overflow-none');
   $('body').addClass('overflow-none');
   let paneId = $($(this)).attr('href');
-  let pane = document.querySelector(paneId)
-  if(!pane.classList.contains('show')){
+  let currentPane = document.querySelector(paneId)
+  if(!currentPane.classList.contains('show')){
     $('.pane').removeClass('show');
-    $(pane).addClass('show');
+    $(currentPane).addClass('show');
   } else{
-    $(pane).removeClass('show');
+    $(currentPane).removeClass('show');
+    $('body').removeClass('overflow-none');
   }
 })
 
@@ -82,7 +82,7 @@ $(".modal-open").click(function(e){
   $('body').addClass('modal-open');
 })
 $(".modal").mousedown(function(e){
-  let closeLinks = document.querySelectorAll(".modal__close");
+  let closeLinks = document.querySelectorAll(".modal-close");
   let modalsGroup = document.querySelectorAll(".modal");
 
   for(let elem of closeLinks){

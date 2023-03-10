@@ -1,0 +1,109 @@
+// table
+.table{
+    &-responsive{
+        @include bp(sm){
+            position: relative;
+            overflow: auto;
+            td, th{
+                white-space: nowrap;
+            }
+        }
+    }
+    width: 100%;
+    line-height: 1.9rem;
+    &.text_left{
+        td, th{
+            text-align: left;
+        }
+    }
+    &.table_sm{
+        td{
+            @include bp(xxl-up){
+                padding-top: 1.8rem;
+                padding-bottom: 1.8rem;
+            }
+        }
+    }
+    &.table_md{
+        td{
+            @include bp(xxl-up){
+                padding-top: 2.45rem;
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+    &.table_lg{
+        td{
+            padding-top: 2.8rem;
+            padding-bottom: 2.8rem;
+            @include bp(sm){
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+    }
+    td{
+        padding: 2.6rem 2.3rem;
+        vertical-align: middle;
+        text-align: center;
+        @include bp(xl){
+            padding: 1rem 1.5rem;
+        }
+        @include bp(md){
+            padding: 1rem;
+        }
+        &:first-child{
+            text-align: left;
+            @include bp(md-up){
+                padding-top: 1.4rem;
+                padding-bottom: 1.1rem;
+            }
+            @include bp(md){
+                padding: 0.5rem 1rem;
+            }
+        }
+        &:last-child{
+            @include bp(md-up){
+                padding-right: 1.9rem;
+            }
+        }
+    }
+    th{
+        background: #FDFDFD;
+        text-align: center;
+        font-weight: 300;
+        padding: 1.6rem 2.4rem 1.5rem;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #F7F8FA;
+        vertical-align: top;
+        @include bp(xl){
+            padding: 1.5rem 1.5rem;
+        }
+        @include bp(md){
+            padding: 1.5rem 1rem;
+        }
+        &:first-child{
+            text-align: left;
+        }
+    }
+    tbody{
+        tr{
+            &:nth-of-type(odd){background: #fff;}
+            &:nth-of-type(even){background: #FDFDFD;}
+            &:last-of-type td:first-of-type{
+                border-bottom-left-radius: 24px;
+            }
+            &:last-of-type{
+                td{
+                    &:first-child{
+                        padding-top: 1.2rem;
+                        padding-bottom: 1rem;
+                    }
+                    &:last-of-type{
+                        border-bottom-right-radius: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
