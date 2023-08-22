@@ -6255,7 +6255,7 @@ textarea.form-control.form-control_xs {
 }
 .profile-statistics__nav {
   align-self: flex-start;
-  margin: 0.2rem auto 0 0;
+  margin: 0.2rem 3rem 0 0;
 }
 @media only screen and (max-width: 991px) {
   .profile-statistics__row {
