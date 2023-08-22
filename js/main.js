@@ -236,10 +236,10 @@ if(video){
         video.pause();
     }
   }, false);
-  
+
   let $video = $("#video"),
   mousedown = false;
-  
+
   $video.click(function(){
   if (this.paused) {
       this.play();
@@ -247,7 +247,7 @@ if(video){
   }
   return true;
   });
-  
+
   $video.on('mousedown', function () {
   mousedown = true;
   });
@@ -421,7 +421,7 @@ let incomeGraph30options = {
         ],
       },
   },
-  
+
 };
 let incomeGraph30 = new ApexCharts(document.querySelector("#chart-incomeGraph-30"), incomeGraph30options);
 if(document.querySelector("#chart-incomeGraph-30")){
@@ -1041,7 +1041,8 @@ let sliderCalc = document.querySelector('#calc-range');
 let inputNumberCalc = document.querySelector('#calc-range-value');
 let currency = "$";
 
-noUiSlider.create(sliderCalc, {
+if(sliderCalc){
+  noUiSlider.create(sliderCalc, {
     connect: [true, false],
     range: {
         'min': 10,
@@ -1057,6 +1058,8 @@ sliderCalc.noUiSlider.on('update', function (values, handle) {
 inputNumberCalc.addEventListener('change', function () {
   sliderCalc.noUiSlider.set(this.value);
 });
+}
+
 
 $(".currency-link").click(function(e){
   e.preventDefault();
