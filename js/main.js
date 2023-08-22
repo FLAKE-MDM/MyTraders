@@ -1,4 +1,8 @@
 // all
+$('.toggler').click(function(e){
+  e.preventDefault();
+  $(this).toggleClass('active');
+});
 
 // pane
 $('.pane-open').click(function(e){
@@ -42,13 +46,65 @@ $(".collapse-link").click(function(e){
   e.preventDefault();
 
   if($(this).hasClass("active")){
-    $(this.getAttribute("href")).slideUp(300)
+    $(this.getAttribute("href")).slideUp(300);
   } else{
-    $(this.getAttribute("href")).slideDown(300)
+    $(this.getAttribute("href")).slideDown(300);
   }
 
-  $(this).toggleClass("active")
-})
+  $(this).toggleClass("active");
+});
+
+$(".search__open").click(function(e){
+  e.preventDefault();
+
+  if(window.innerWidth > 768){
+    if($(this).hasClass("active")){
+      $(this.getAttribute("href")).removeClass('show');
+    } else{
+      $(this.getAttribute("href")).addClass('show');
+    }
+
+    $(this).addClass("active");
+    $(".search__close").addClass("active");
+
+  } else{
+    if($(this).hasClass("active")){
+      $(this.getAttribute("href")).slideUp(300);
+      $(".search__close").removeClass("active");
+    } else{
+      $(this.getAttribute("href")).slideDown(300);
+      $(".search__close").addClass("active");
+    }
+
+    $(this).toggleClass("active");
+  }
+});
+
+$(".search__close").click(function(e){
+  e.preventDefault();
+
+  if(window.innerWidth > 768){
+    if($(this).hasClass("active")){
+      $(this.getAttribute("href")).removeClass('show');
+    } else{
+      $(this.getAttribute("href")).addClass('show');
+    }
+
+    $(this).removeClass("active");
+    $(".search__open").removeClass("active");
+  } else{
+    if($(this).hasClass("active")){
+      $(this.getAttribute("href")).slideUp(300);
+      $(".search__open").removeClass("active");
+    } else{
+      $(this.getAttribute("href")).slideDown(300);
+      $(".search__open").addClass("active");
+
+      $(this).toggleClass("active");
+    }
+  }
+});
+
 
 $(".faq-item__link").click(function(e){
   $(this).parent().toggleClass("active")
@@ -59,8 +115,16 @@ $('.tab-link').click(function(e){
     e.preventDefault();
     $(this).parents(".tab-nav").find('.tab-link').removeClass('active');
     $(this).addClass('active');
-    $(this).parents('.tab-section').find('.tab-pane').removeClass('active');
+    $(this).closest('.tab-section').find('.tab-pane').removeClass('active');
     $(this.getAttribute("href")).addClass('active');
+});
+
+$('.tab-link-main').click(function(e){
+  e.preventDefault();
+  $(this).parents(".tab-nav").find('.tab-link-main').removeClass('active');
+  $(this).addClass('active');
+  $(this).parents('.tab-section').find('.tab-pane-main').removeClass('active');
+  $(this.getAttribute("href")).addClass('active');
 });
 
 
@@ -137,6 +201,29 @@ new Swiper(".logos-slider", {
   },
 });
 
+new Swiper(".top-slider", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+  navigation: {
+    prevEl: ".swiper-prev",
+    nextEl: ".swiper-next",
+  },
+});
+
 // video
 let video = document.querySelector("#video");
 let playBtn = document.querySelector(".play-btn");
@@ -210,6 +297,30 @@ inputNumber.addEventListener('change', function () {
   slider.noUiSlider.set(this.value);
 });
 
+let sliderWithdraw = document.querySelector('#range-withdraw');
+
+if(sliderWithdraw){
+  let inputNumberWithdraw = document.querySelector('#range-value-withdraw');
+
+  noUiSlider.create(sliderWithdraw, {
+      connect: [true, false],
+      range: {
+          'min': 10,
+          'max': 1000000
+      },
+      start: [100000]
+  });
+
+  sliderWithdraw.noUiSlider.on('update', function (values, handle) {
+    inputNumberWithdraw.value = Math.ceil(values[handle]) + " $";
+  });
+
+  inputNumberWithdraw .addEventListener('change', function () {
+    sliderWithdraw.noUiSlider.set(this.value);
+  });
+}
+
+
 
 // referrals
 $('.copy-link').click(function(e) {
@@ -220,6 +331,30 @@ $('.copy-link').click(function(e) {
   document.execCommand("copy");
   $temp.remove();
 
+});
+
+new Swiper(".tag-slider", {
+  freeMode: true,
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 4,
+    },
+    993: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    },
+    1600: {
+      slidesPerView: 8,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+  },
 });
 
 

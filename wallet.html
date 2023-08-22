@@ -13,7 +13,12 @@
 <body>
     <div class="wrap" id="wrap">
         <!-- header -->
-        <header class="header d-flex d-xl-none align-items-center">
+        <header class="header d-flex d-xl-none align-items-center justify-content-between">
+            <a href="#navbar" class="btn-menu pane-open d-xl-none">
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+            </a>
             <a href="index.html" class="logo header__logo d-flex align-items-center">
                 <div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div>
                 <div class="logo__text"><img src="img/logo-text.svg" alt="" class="img-fluid"></div>
@@ -76,11 +81,6 @@
             <div class="login">
                 <a href="#aside" class="login__mobile-link pane-open icon d-xl-none icon-login"></a>
             </div>
-            <a href="#navbar" class="btn-menu pane-open d-xl-none">
-                <div class="btn-menu__item"></div>
-                <div class="btn-menu__item"></div>
-                <div class="btn-menu__item"></div>
-            </a>
         </header>
         <!-- /header -->
         <div class="d-xl-flex content">
@@ -185,14 +185,26 @@
                 </div>
                 <!-- /main__header -->
                 <!-- referral-block -->
-                <div class="box box_padding d-flex balance-block mb-md  align-items-center">
-                    <div class="balance-block__image"><img src="img/icons/balance.svg" alt="" class="img-fluid"></div>
-                    <div class="balance-block__text">
-                        <div class="text_bold text_upper balance-block__title">Ваш баланс</div>
-                        <div class="title_size-sm text_primary text_mediumbold text_styling">3 054.45 $</div>
+                <div class="box box_padding d-flex balance-block mb-md align-items-center">
+                    <div class="balance-item_lg d-flex align-items-center">
+                        <div class="balance-block__image"><img src="img/icons/balance.svg" alt="" class="img-fluid"></div>
+                        <div class="balance-block__text">
+                            <div class="text_bold text_upper balance-block__title">Ваш баланс</div>
+                            <div class="title_size-sm text_primary text_mediumbold text_styling">95000$</div>
+                        </div>
                     </div>
-                    <div class="balance-block__buttons d-flex flex-wrap">
-                        <a href="#" class="btn btn_light me-1 btn_size-smd w-100_xs">Вывод средств</a>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <div class="balance-item text_styling">
+                            <div class="text_primary text_size-sm text_bold">50000$</div>
+                            <div class="text_dark text_size-xs text_normal">available balance</div>
+                        </div>
+                        <div class="balance-item text_styling">
+                            <div class="text_primary text_size-sm text_bold">45000$</div>
+                            <div class="text_dark text_size-xs text_normal">balance in copy traders</div>
+                        </div>
+                    </div>
+                    <div class="balance-block__buttons d-flex flex-wrap ms-auto">
+                        <a href="#withdraw" class="btn modal-open btn_light me-1 btn_size-smd w-100_xs">Вывод средств</a>
                         <a href="#balance" class="btn modal-open btn_size-smd w-100_xs">Пополнить баланс</a>
                     </div>
                 </div>
@@ -499,6 +511,92 @@
         </div>
     </div>
     <!-- /balance -->
+
+    <!-- withdraw -->
+    <div class="modal fade" id="withdraw">
+        <div class="modal-dialog modal-dialog_md">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="tab-section">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="step-1">
+                                <div class="modal__header text_mediumbold text_upper">
+                                    WITHDRAW (STEP 1)
+                                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                                </div>
+                                <div class="modal__body modal__body_padding-sm">
+                                    <div class="mb-xxs text_normal text_size-sm d-flex justify-content-between">
+                                        <span class="text_dark">Select Amount</span>
+                                        <span><span class="text_dark me-1">Available</span> 3054.45 $</span>
+                                    </div>
+                                    <input class="range-input form-control text_center" id="range-value-withdraw"></input>
+                                    <div class="range-block d-flex align-items-center">
+                                        <div class="text_dark text_size-sm text_normal">10$</div>
+                                        <div id="range-withdraw"></div>
+                                        <div class="text_dark text_size-sm text_normal">Max</div>
+                                    </div>
+                                    <p class="text_dark text_normal text_size-sm">Select Payment type</p>
+                                    <div class="radio-list radio-list_clear">
+                                        <label class="radio-list__item active">
+                                            <input type="radio" class="collapse" checked name="withdraw">
+                                            <div class="radio-list__icon icon icon-pay-bank"></div>
+                                            <div class="radio-list__text">Bank transfer</div>
+                                        </label>
+                                        <label class="radio-list__item">
+                                            <input type="radio" class="collapse" name="withdraw">
+                                            <div class="radio-list__icon icon icon-pay-bitcoin"></div>
+                                            <div class="radio-list__text">Crypto transfer</div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group text_center">
+                                        <a href="#step-2" class="btn btn_size-sm w-100 tab-link">NEXT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="step-2">
+                                <div class="modal__header text_mediumbold text_upper">
+                                    withdraw (STEP 2)
+                                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                                </div>
+                                <div class="modal__body modal__body_padding-sm">
+                                    <div class="text_dark text_normal text_size-sm mb-xxs">Select Currency</div>
+                                    <div class="form-group_sm">
+                                        <div class="fake-select dropdown">
+                                            <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal form-control form-control_clear">
+                                                <span class="fake-select__value">EUR ($)</span>
+                                            </a>
+                                            <div class="fake-select__dropdown dropdown-menu">
+                                                <label class="active fake-select__item">
+                                                    <input type="radio" name="currency" checked class="collapse">
+                                                    EUR (€)
+                                                </label>
+                                                <label class="fake-select__item">
+                                                    <input type="radio" name="currency" class="collapse">
+                                                    USD ($)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-xxs text_dark text_normal text_size-sm">NAME</div>
+                                    <div class="form-group_sm"><input class="form-control form-control_xs"></input></div>
+                                    <div class="mb-xxs text_dark text_normal text_size-sm">IBAN</div>
+                                    <div class="form-group_sm"><input class="form-control form-control_xs"></input></div>
+                                    <div class="mb-xxs text_dark text_normal text_size-sm">REFERENCE</div>
+                                    <div class="mb-sm"><textarea class="form-control form-control_xs"></textarea></div>
+                                    <div class="form-group text_center d-flex">
+                                        <a href="#step-1" class="btn btn_light btn_size-sm w-100 tab-link">Back</a>
+                                        <button class="btn btn_size-sm w-100 tab-link">Withdraw</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__footer text_dark text_size-sm"><p>Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.</p> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /withdraw -->
 
 
 

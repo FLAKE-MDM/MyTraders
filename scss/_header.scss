@@ -22,6 +22,26 @@
             }
         }
     }
+
+    &.d-xl-none{
+
+        .btn-menu{
+            margin-left: 0.3rem;
+        }
+
+        .login{
+            margin: 0.6rem 0 0;
+        }
+
+        .logo__image{
+            width: 4.1rem;
+            margin-right: 0.5rem;
+        }
+
+        .logo__text{
+            width: 12rem;
+        }
+    }
 }
 .logo{
     flex-shrink: 0;
@@ -39,6 +59,7 @@
 .login{
     font-size: 1.5rem;
     align-self: center;
+
     @include bp(lg){
         margin: 0.5rem 3.3rem 0 auto;
     }
@@ -51,9 +72,21 @@
         height: 4.4rem;
         padding: 0.5rem;
     }
-    &__mobile-link{
 
+    .user-info{
+        @include bp(xxl){
+            margin: 0 1.5rem 0 0;
+
+            .user-info__dropdown-toggle{
+                padding-right: 1.5rem;
+            }
+        }
+
+        &:before{
+            display: none;
+        }
     }
+
 }
 .navbar{
     @include bp(xl-up){
@@ -127,7 +160,7 @@
             &.active{
                 color: $black;
             }
-            @include bp(xl){
+            @include bp(xxl){
                 font-size: 1.5rem;
             }
             @include bp(lg){

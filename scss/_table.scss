@@ -16,6 +16,11 @@
             text-align: left;
         }
     }
+    &.table_xs{
+        td, td:first-child{
+            padding: 0.45rem 2.4rem;
+        }
+    }
     &.table_sm{
         td{
             @include bp(xxl-up){
@@ -43,7 +48,7 @@
         }
     }
     td{
-        padding: 2.6rem 2.3rem;
+        padding: 1rem 2rem;
         vertical-align: middle;
         text-align: center;
         @include bp(xl){
@@ -72,7 +77,7 @@
         background: #FDFDFD;
         text-align: center;
         font-weight: 300;
-        padding: 1.6rem 2.4rem 1.5rem;
+        padding: 1.6rem 2rem 1.5rem;
         font-size: 1.5rem;
         border-bottom: 1px solid #F7F8FA;
         vertical-align: top;

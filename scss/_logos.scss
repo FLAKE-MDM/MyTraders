@@ -1,11 +1,12 @@
 .logos{
     &-section{
-       padding: 9rem 0 18.2rem;
-       margin-bottom: -7.2rem;
-       @include bp(sm){
-            padding: 8rem 0 15.7rem;
+        padding: 3.2rem 0 6.2rem;
+
+        @include bp(md){
+            padding: 8rem 0 4rem;
         }
-       &__link{
+
+        &__link{
             display: inline-block;
             filter: grayscale(1);
             opacity: 0.3;
@@ -13,7 +14,7 @@
                 opacity: 1;
                 filter: grayscale(0);
             }
-       }
+        }
     }
     &-slider{
         .swiper-slide{
@@ -36,6 +37,14 @@
             @include bp(md){
                 margin: 0;
                 padding: 0 3rem;
+            }
+
+            .swiper-button{
+                top: 1.1rem;
+
+                @include bp(md){
+                    top: 0;
+                }
             }
         }
     }

@@ -14,7 +14,12 @@
 <body>
     <div class="wrap" id="wrap">
         <!-- header -->
-        <header class="header d-flex d-xl-none align-items-center">
+        <header class="header d-flex d-xl-none align-items-center justify-content-between">
+            <a href="#navbar" class="btn-menu pane-open d-xl-none">
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+            </a>
             <a href="index.html" class="logo header__logo d-flex align-items-center">
                 <div class="logo__image"><img src="img/logo.svg" alt="" class="img-fluid"></div>
                 <div class="logo__text"><img src="img/logo-text.svg" alt="" class="img-fluid"></div>
@@ -77,11 +82,6 @@
             <div class="login">
                 <a href="#aside" class="login__mobile-link pane-open icon d-xl-none icon-login"></a>
             </div>
-            <a href="#navbar" class="btn-menu pane-open d-xl-none">
-                <div class="btn-menu__item"></div>
-                <div class="btn-menu__item"></div>
-                <div class="btn-menu__item"></div>
-            </a>
         </header>
         <!-- /header -->
         <div class="d-lg-flex content">
@@ -186,301 +186,946 @@
                 </div>
                 <!-- /main__header -->
                 <!-- trader-info -->
-                <div class="box profile box_padding flex-wrap d-flex align-items-center justify-content-between mb-md">
-                    <div class="profile__user-card user-card d-flex align-items-center">
-                        <div class="user-card__image circle-image circle-image_lg">
-                            <img src="img/content/user-8.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="user-card__text p-0">
-                            <div class="text_normal text_size-lg user-card__name">Alexander Morgan</div>
-                            <p class="text_dark text_size-sm">ID 459368942</p>
-                        </div>
-                    </div>
-                    <div class="d-md-flex profile__info">
-                        <div class="info-block d-flex p-0">
-                            <div class="me-3 info-block__image"><img src="img/icons/binance-lg.svg" alt="" class="img-fluid"></div>
-                            <div class="info-block__text">
-                                <div class="text_mediumbold text_styling info-block__title-lg">Binance</div>
-                                <div class="text_dark text_size-sm text_normal d-none d-md-block">Биржа</div>
+                <div class="box box_padding mb-md profile">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap_md">
+                        <div class="profile__user-card user-card">
+                            <div class="user-card__image circle-image circle-image_lg">
+                                <img src="img/content/user-8.jpg" alt="" class="img-fluid">
                             </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="info-block d-flex p-0">
-                                <div class="info-block__icon info-block__icon_sm"><span class="icon icon-user-fill"></span></div>
-                                <div class="info-block__text">
-                                    <div class="text_mediumbold text_styling info-block__title-lg">12 644</div>
-                                    <div class="text_dark text_size-sm text_normal">Подписчики</div>
+                            <div class="user-card__text p-0">
+                                <div class="text_normal text_size-lg user-card__name d-flex align-items-center">
+                                    <span class="me-1">Alexander <br class="d-md-none">Morgan</span>
+                                    <div class="mark mark_lg mark_gold d-flex align-items-center">
+                                        <div class="mark__image">
+                                            <div class="mark__num">1</div>
+                                            <img src="img/icons/mark-gold.svg" alt="" class="img-fluid">
+                                        </div>
+                                        Gold
+                                    </div>
                                 </div>
                             </div>
-                            <div class="info-block d-flex p-0">
-                                <div class="info-block__icon info-block__icon_sm"><span class="icon icon-chart-fill"></span></div>
-                                <div class="info-block__text">
-                                    <div class="text_mediumbold text_styling info-block__title-lg">110%</div>
-                                    <div class="text_dark text_size-sm text_normal">ROI</div>
+                            <div class="d-flex profile__info">
+                                <div class="info-block">
+                                    <p class="text_size-sm text_dark text_normal">Followers</p>
+                                    <p class="text_size-lg text_mediumbold text_styling">1500</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn_size-sm w-100_sm">Инвестировать</a>
-                </div>
-                <!-- /trader-info -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- box -->
-                        <div class="box mb-md tab-section">
-                            <div class="box__heading d-flex justify-content-between">
-                                <div class="box__title text_upper text_mediumbold">Общий доход</div>
-                                <ul class="d-flex btn-nav tab-nav">
-                                    <li class="btn-nav__item"><a href="#incomeTotal-30" class="tab-link btn-nav__link active">30 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                    <li class="btn-nav__item">
-                                        <a href="#incomeTotal-60" class="tab-link btn-nav__link">60 дн<span class="d-none d-md-inline">ей</span></a>
-                                    </li>
-                                    <li class="btn-nav__item">
-                                        <a href="#incomeTotal-90" class="tab-link btn-nav__link">90 дн<span class="d-none d-md-inline">ей</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="box__body_padding-md">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="incomeTotal-30">
-                                        <div id="chart-incomeTotal-30"></div>
-                                    </div>
-                                    <div class="tab-pane" id="incomeTotal-60">
-                                        <div id="chart-incomeTotal-60"></div>
-                                    </div>
-                                    <div class="tab-pane" id="incomeTotal-90">
-                                        <div id="chart-incomeTotal-90"></div>
+                                <div class="info-block">
+                                    <p class="text_size-sm text_dark text_normal">Trading Days</p>
+                                    <p class="text_size-lg text_mediumbold text_styling">84</p>
+                                </div>
+                                <div class="info-block">
+                                    <p class="text_size-sm text_dark text_normal">Total Trades</p>
+                                    <p class="text_size-lg text_mediumbold text_styling">800</p>
+                                </div>
+                                <div class="info-block">
+                                    <div class="text_size-sm text_dark text_normal d-md-block d-none">Trade place</div>
+                                    <div class="text_size-lg d-flex align-items-center text_mediumbold text_styling">
+                                        <div class="me-1 info-block__image"><img src="img/icons/binance-logo.svg" alt="" class="img-fluid"></div>
+                                        <span class="d-md-block d-none">Binance</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /box -->
+                        <ul class="profile__links sort-list d-flex text_size-sm">
+                            <li class="sort-list__item">
+                                <a href="#" class="d-flex align-items-center toggler">
+                                    <span class="icon icon-favorite_dark me-1"></span>
+                                    Favorite
+                                </a>
+                            </li>
+                            <li class="sort-list__item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <span class="icon icon-share me-1"></span>
+                                    Share
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#invest" class="btn btn_size-sm w-100_md modal-open">Invest</a>
                     </div>
-                    <div class="col-lg-6">
-                        <!-- box -->
-                        <div class="box mb-md tab-section">
-                            <div class="box__heading d-flex justify-content-between">
-                                <div class="box__title text_upper text_mediumbold">Количество сделок</div>
-                                <ul class="d-flex btn-nav tab-nav">
-                                    <li class="btn-nav__item"><a href="#amountDeals-30" class="tab-link btn-nav__link">30 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                    <li class="btn-nav__item"><a href="#amountDeals-90" class="tab-link btn-nav__link active">90 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                    <li class="btn-nav__item"><a href="#amountDeals-180" class="tab-link btn-nav__link">180 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="box__body_padding-md">
-                                <div class="tab-content">
-                                    <div class="tab-pane" id="amountDeals-30">
-                                        <div id="chart-amountDeals-30"></div>
-                                    </div>
-                                    <div class="tab-pane active" id="amountDeals-90">
-                                        <div id="chart-amountDeals-90"></div>
-                                    </div>
-                                    <div class="tab-pane" id="amountDeals-180">
-                                        <div id="chart-amountDeals-180"></div>
-                                    </div>
-                                </div>
+                    <!-- profile-statistics -->
+                    <div class="profile-statistics d-lg-flex tab-section">
+                        <div class="fake-select dropdown profile-statistics__nav">
+                            <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal fake-select__link_decor">
+                                <span class="fake-select__value">Last 30 Day’s</span>
+                            </a>
+                            <div class="fake-select__dropdown dropdown-menu tab-nav">
+                                <a href="#statistics-30" class="tab-link active fake-select__item">Last 30 Day’s</a>
+                                <a href="#statistics-60" class="tab-link fake-select__item">Last 60 Day’s</a>
+                                <a href="#statistics-90" class="tab-link fake-select__item">Last 90 Day’s</a>
                             </div>
                         </div>
-                        <!-- /box -->
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- box -->
-                        <div class="box mb-md tab-section">
-                            <div class="box__heading d-flex justify-content-between">
-                                <div class="box__title text_upper text_mediumbold">Калькулятор дохода</div>
-                                <ul class="d-flex btn-nav">
-                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link active" data-currency="$">USD</a></li>
-                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link" data-currency="₽">RUB</a></li>
-                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link" data-currency="€">EUR</a></li>
-                                    <li class="btn-nav__item"><a href="#" class="btn-nav__link currency-link" data-currency="₴">UHA</a></li>
-                                </ul>
-                            </div>
-                            <div class="box__body_padding calc-block">
-                                <form action="#">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="text_dark text_normal text_size-sm">Первоначальная <br>сумма</div>
-                                        <input class="range-input form-control form-control_sm text_center" id="calc-range-value"></input>
-                                    </div>
-                                    <div class="calc-block__range-block range-block d-flex align-items-center">
-                                        <div class="text_dark text_size-sm text_normal">10</div>
-                                        <div id="calc-range"></div>
-                                        <div class="text_dark text_size-sm text_normal">100K</div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center calc-block__footer">
-                                        <div class="text_dark text_normal text_size-sm">Вы будете <br>получать прибыль</div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text_primary text_styling text_bold calc-block__num">10%</div>
-                                            <div class="dropdown ms-1">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="statistics-30">
+                                <div class="d-flex profile-statistics__row profile__info">
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">ROI</span>
+                                            <div class="dropdown">
                                                 <a href="#" class="dropdown-toggle dropdown-toggle_clear">
-                                                    <span class="icon icon-info-double "></span>
+                                                    <span class="icon icon-info_sm"></span>
                                                 </a>
-                                                <div class="dropdown-menu dropdown-menu_padding dropdown-menu_right">
-                                                    text
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="btn btn_size-sm w-100_xs">Инвестировать</button>
+                                        <div class="text_size-lg text_mediumbold text_styling">300%</div>
                                     </div>
-                                </form>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">PLN</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">100,000</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Win rates </span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">53%</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Trading Frequency</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">17</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Run Time</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">150 days</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Last Traded at</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">14 July</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- /box -->
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- box -->
-                        <div class="box mb-md tab-section">
-                            <div class="box__heading d-flex justify-content-between">
-                                <div class="box__title text_upper text_mediumbold">История сделок</div>
-                                <ul class="d-flex btn-nav tab-nav">
-                                    <li class="btn-nav__item"><a href="#historyDeals-30" class="tab-link btn-nav__link active">30 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                    <li class="btn-nav__item"><a href="#historyDeals-90" class="tab-link btn-nav__link">90 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                    <li class="btn-nav__item"><a href="#historyDeals-180" class="tab-link btn-nav__link">180 дн<span class="d-none d-md-inline">ей</span></a></li>
-                                </ul>
+                            <div class="tab-pane" id="statistics-60">
+                                <div class="d-flex profile-statistics__row profile__info">
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">ROI</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">400%</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">PLN</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">150,000</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Win rates </span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">63%</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Trading Frequency</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">17</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Run Time</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">180 days</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Last Traded at</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">25 July</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box__body_padding-md">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="historyDeals-30">
-                                        <div id="chart-historyDeals-30"></div>
+                            <div class="tab-pane" id="statistics-90">
+                                <div class="d-flex profile-statistics__row profile__info">
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">ROI</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">300%</div>
                                     </div>
-                                    <div class="tab-pane" id="historyDeals-90">
-                                        <div id="chart-historyDeals-90"></div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">PLN</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">100,000</div>
                                     </div>
-                                    <div class="tab-pane" id="historyDeals-180">
-                                        <div id="chart-historyDeals-180"></div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Win rates </span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">53%</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Trading Frequency</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">17</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Run Time</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">150 days</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="text_size-sm text_dark text_normal d-flex align-items-center">
+                                            <span class="me-1">Last Traded at</span>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                    <span class="icon icon-info_sm"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu_tooltip">
+                                                    Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_size-lg text_mediumbold text_styling">14 July</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /box -->
+                    </div>
+                    <!-- /profile-statistics -->
+                </div>
+                <!-- /trader-info -->
+                <!-- trader-tabs -->
+                <div class="tab-section">
+                    <div class="trader-tabs-nav tab-nav d-flex box mb-md">
+                        <a href="#statistic" class="trader-tabs-nav__link tab-link-main d-flex align-items-center justify-content-center active">
+                            <span class="icon icon-statistic"></span>
+                            <div class="trader-tabs-nav__text">Statistic data</div>
+                        </a>
+                        <a href="#history" class="trader-tabs-nav__link tab-link-main d-flex align-items-center justify-content-center">
+                            <span class="icon icon-history"></span>
+                            <div class="trader-tabs-nav__text">Trade history</div>
+                        </a>
+                        <a href="#followers" class="trader-tabs-nav__link tab-link-main d-flex align-items-center justify-content-center">
+                            <span class="icon icon-followers"></span>
+                            <div class="trader-tabs-nav__text">Followers</div>
+                        </a>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane-main active" id="statistic">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- box -->
+                                    <div class="box mb-md tab-section">
+                                        <div class="box__heading d-flex justify-content-between">
+                                            <div class="box__title text_upper text_mediumbold d-flex align-items-center">
+                                                Общий доход
+                                                <div class="dropdown ms-1">
+                                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                        <span class="icon icon-info_sm"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu_tooltip">
+                                                        Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fake-select dropdown graph-nav">
+                                                <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal">
+                                                    <span class="fake-select__value">30 дней</span>
+                                                </a>
+                                                <div class="fake-select__dropdown dropdown-menu tab-nav">
+                                                    <a href="#incomeTotal-30" class="tab-link active fake-select__item">30 дней</a>
+                                                    <a href="#incomeTotal-60" class="tab-link fake-select__item">60 дней</a>
+                                                    <a href="#incomeTotal-90" class="tab-link fake-select__item">90 дней</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box__body_padding-md">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="incomeTotal-30">
+                                                    <div id="chart-incomeTotal-30"></div>
+                                                </div>
+                                                <div class="tab-pane" id="incomeTotal-60">
+                                                    <div id="chart-incomeTotal-60"></div>
+                                                </div>
+                                                <div class="tab-pane" id="incomeTotal-90">
+                                                    <div id="chart-incomeTotal-90"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /box -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- box -->
+                                    <div class="box mb-md tab-section">
+                                        <div class="box__heading d-flex justify-content-between">
+                                            <div class="box__title text_upper text_mediumbold d-flex align-items-center">
+                                                Количество сделок
+                                                <div class="dropdown ms-1">
+                                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                        <span class="icon icon-info_sm"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu_tooltip">
+                                                        Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fake-select dropdown graph-nav">
+                                                <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal">
+                                                    <span class="fake-select__value">90 дней</span>
+                                                </a>
+                                                <div class="fake-select__dropdown dropdown-menu tab-nav">
+                                                    <a href="#amountDeals-30" class="tab-link fake-select__item">30 дней</a>
+                                                    <a href="#amountDeals-90" class="tab-link active fake-select__item">90 дней</a>
+                                                    <a href="#amountDeals-180" class="tab-link fake-select__item">180 дней</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box__body_padding-md">
+                                            <div class="tab-content">
+                                                <div class="tab-pane" id="amountDeals-30">
+                                                    <div id="chart-amountDeals-30"></div>
+                                                </div>
+                                                <div class="tab-pane active" id="amountDeals-90">
+                                                    <div id="chart-amountDeals-90"></div>
+                                                </div>
+                                                <div class="tab-pane" id="amountDeals-180">
+                                                    <div id="chart-amountDeals-180"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /box -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- box -->
+                                    <div class="box mb-md tab-section">
+                                        <div class="box__heading d-flex justify-content-between">
+                                            <div class="box__title text_upper text_mediumbold d-flex align-items-center">
+                                                Калькулятор дохода
+                                                <div class="dropdown ms-1">
+                                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                        <span class="icon icon-info_sm"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu_tooltip">
+                                                        Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fake-select dropdown graph-nav">
+                                                <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal">
+                                                    <span class="fake-select__value">USD</span>
+                                                </a>
+                                                <div class="fake-select__dropdown dropdown-menu">
+                                                    <label class="fake-select__item">
+                                                        <input type="radio" class="collapse" name="curr" checked>
+                                                        USD
+                                                    </label>
+                                                    <label class="active fake-select__item">
+                                                        <input type="radio" class="collapse" name="curr">
+                                                        RUB
+                                                    </label>
+                                                    <label class="active fake-select__item">
+                                                        <input type="radio" class="collapse" name="curr">
+                                                        EUR
+                                                    </label>
+                                                    <label class="active fake-select__item">
+                                                        <input type="radio" class="collapse" name="curr">
+                                                        UAH
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box__body_padding calc-block">
+                                            <form action="#">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="text_dark text_normal text_size-sm">Первоначальная <br>сумма</div>
+                                                    <input class="range-input form-control form-control_sm text_center" id="calc-range-value"></input>
+                                                </div>
+                                                <div class="calc-block__range-block range-block d-flex align-items-center">
+                                                    <div class="text_dark text_size-sm text_normal">10</div>
+                                                    <div id="calc-range"></div>
+                                                    <div class="text_dark text_size-sm text_normal">100K</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center calc-block__footer">
+                                                    <div class="text_dark text_normal text_size-sm">Вы будете <br>получать прибыль</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text_primary text_styling text_bold calc-block__num">10%</div>
+                                                        <div class="dropdown ms-1">
+                                                            <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                                <span class="icon icon-info-double "></span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu_padding dropdown-menu_right">
+                                                                text
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn_size-sm w-100_xs">Инвестировать</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- /box -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- box -->
+                                    <div class="box mb-md tab-section">
+                                        <div class="box__heading d-flex justify-content-between">
+                                            <div class="box__title text_upper text_mediumbold d-flex align-items-center">
+                                                История сделок
+                                                <div class="dropdown ms-1">
+                                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                        <span class="icon icon-info_sm"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu_tooltip">
+                                                        Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fake-select dropdown graph-nav">
+                                                <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal">
+                                                    <span class="fake-select__value">30 дней</span>
+                                                </a>
+                                                <div class="fake-select__dropdown dropdown-menu tab-nav">
+                                                    <a href="#historyDeals-30" class="tab-link active fake-select__item">30 дней</a>
+                                                    <a href="#historyDeals-90" class="tab-link fake-select__item">90 дней</a>
+                                                    <a href="#historyDeals-180" class="tab-link fake-select__item">180 дней</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box__body_padding-md">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="historyDeals-30">
+                                                    <div id="chart-historyDeals-30"></div>
+                                                </div>
+                                                <div class="tab-pane" id="historyDeals-90">
+                                                    <div id="chart-historyDeals-90"></div>
+                                                </div>
+                                                <div class="tab-pane" id="historyDeals-180">
+                                                    <div id="chart-historyDeals-180"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /box -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane-main" id="history">
+                            <!-- connected traders -->
+                            <div class="box">
+                                <div class="box__heading">
+                                    <div class="box__title text_upper text_mediumbold">История сделок</div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table_lg">
+                                        <thead>
+                                            <tr>
+                                                <th>Дата</th>
+                                                <th>Направление</th>
+                                                <th>Точка входа</th>
+                                                <th>Точка выхода</th>
+                                                <th>Итог %</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>
+                                                <div class="d-inline-flex d-md-flex align-items-center">
+                                                    <span class="icon icon-transger me-3"></span>21 Марта 2022</div>
+                                                </td>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center еxchange-direction">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="icon icon-ethereum me-3"></div>
+                                                        ETH
+                                                    </div>
+                                                    <div class="icon icon-arrow-separator me-3 ms-3 еxchange-direction__separator"></div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="icon icon-tether me-3"></div>
+                                                        USDT
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3400 $</td>
+                                            <td>3400 $</td>
+                                            <td><span class="text_primary text_normal">+7.7%</span></td>
+                                            <td class="text_right">
+                                                <div class="dropdown d-inline-flex">
+                                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                        <span class="icon icon-dots"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu_right">
+                                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                                            <span class="icon icon-info me-1"></span>
+                                                            Подробнее
+                                                        </a>
+                                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                                            <span class="icon me-1 icon-download"></span>
+                                                            Скачать
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-inline-flex d-md-flex align-items-center">
+                                                    <span class="icon icon-transger me-3"></span>21 Марта 2022</div>
+                                                </td>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center еxchange-direction">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="icon icon-ethereum me-3"></div>
+                                                        ETH
+                                                    </div>
+                                                    <div class="icon icon-arrow-separator me-3 ms-3 еxchange-direction__separator"></div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="icon icon-tether me-3"></div>
+                                                        USDT
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3400 $</td>
+                                            <td>3400 $</td>
+                                            <td><span class="text_primary text_normal">+7.7%</span></td>
+                                            <td class="text_right">
+                                                <div class="dropdown d-inline-flex">
+                                                    <a href="#" class="dropdown-toggle dropdown-toggle_clear">
+                                                        <span class="icon icon-dots"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu_right">
+                                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                                            <span class="icon icon-info me-1"></span>
+                                                            Подробнее
+                                                        </a>
+                                                        <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
+                                                            <span class="icon me-1 icon-download"></span>
+                                                            Скачать
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- pagination -->
+                                <ul class="pagination pagination_padding d-flex align-items-center justify-content-center">
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link d-flex align-items-center">
+                                            <span class="icon icon-caret-left pagination__icon"></span>
+                                            <span class="d-none d-md-block">Назад</span>
+                                        </a>
+                                    </li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                                    <li class="pagination__item"><span class="pagination__link active">2</span></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">10</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">20</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">30</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">40</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">50</a></li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link d-flex align-items-center">
+                                            <span class="d-none d-md-block">Вперёд</span>
+                                            <span class="icon icon-caret-right pagination__icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- /pagination -->
+                            </div>
+                            <!-- connected traders -->
+                        </div>
+                        <div class="tab-pane-main" id="followers">
+                            <div class="box">
+                                <div class="box__heading">
+                                    <div class="box__title text_upper text_mediumbold">TOP 100 FOLLOWERS</div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table_xs">
+                                        <thead>
+                                            <tr>
+                                                <th>Пользователь</th>
+                                                <th>Net Profit</th>
+                                                <th>Roi</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-card d-inline-flex align-items-center">
+                                                    <div class="user-card__image circle-image">
+                                                        <img src="img/content/user-3.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="user-card__text">
+                                                        <p class="text_normal">Alexander</p>
+                                                        <p class="text_dark text_size-xs">Morgan</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text_normal">350 000 $</span>
+                                            </td>
+                                            <td>
+                                                <span class="text_success-dark text_normal">+1.89456%</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- pagination -->
+                                <ul class="pagination pagination_padding d-flex align-items-center justify-content-center">
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link d-flex align-items-center">
+                                            <span class="icon icon-caret-left pagination__icon"></span>
+                                            <span class="d-none d-md-block">Назад</span>
+                                        </a>
+                                    </li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                                    <li class="pagination__item"><span class="pagination__link active">2</span></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">10</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">20</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">30</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">40</a></li>
+                                    <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">50</a></li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__link d-flex align-items-center">
+                                            <span class="d-none d-md-block">Вперёд</span>
+                                            <span class="icon icon-caret-right pagination__icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- /pagination -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Connected Traders -->
-                <div class="box">
-                    <div class="box__heading">
-                        <div class="box__title text_upper text_mediumbold">История сделок</div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table_lg">
-                            <thead>
-                                <tr>
-                                    <th>Дата</th>
-                                    <th>Направление</th>
-                                    <th>Точка входа</th>
-                                    <th>Точка выхода</th>
-                                    <th>Итог %</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tr>
-                                <td>
-                                    <div class="d-inline-flex d-md-flex align-items-center">
-                                        <span class="icon icon-transger me-3"></span>21 Марта 2022</div>
-                                    </td>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center justify-content-center еxchange-direction">
-                                        <div class="d-flex align-items-center">
-                                            <div class="icon icon-ethereum me-3"></div>
-                                            ETH
-                                        </div>
-                                        <div class="icon icon-arrow-separator me-3 ms-3 еxchange-direction__separator"></div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="icon icon-tether me-3"></div>
-                                            USDT
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>3400 $</td>
-                                <td>3400 $</td>
-                                <td><span class="text_primary text_normal">+7.7%</span></td>
-                                <td class="text_right">
-                                    <div class="dropdown d-inline-flex">
-                                        <a href="#" class="dropdown-toggle dropdown-toggle_clear">
-                                            <span class="icon icon-dots"></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu_right">
-                                            <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
-                                                <span class="icon icon-info me-1"></span>
-                                                Подробнее
-                                            </a>
-                                            <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
-                                                <span class="icon me-1 icon-download"></span>
-                                                Скачать
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-inline-flex d-md-flex align-items-center">
-                                        <span class="icon icon-transger me-3"></span>21 Марта 2022</div>
-                                    </td>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center justify-content-center еxchange-direction">
-                                        <div class="d-flex align-items-center">
-                                            <div class="icon icon-ethereum me-3"></div>
-                                            ETH
-                                        </div>
-                                        <div class="icon icon-arrow-separator me-3 ms-3 еxchange-direction__separator"></div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="icon icon-tether me-3"></div>
-                                            USDT
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>3400 $</td>
-                                <td>3400 $</td>
-                                <td><span class="text_primary text_normal">+7.7%</span></td>
-                                <td class="text_right">
-                                    <div class="dropdown d-inline-flex">
-                                        <a href="#" class="dropdown-toggle dropdown-toggle_clear">
-                                            <span class="icon icon-dots"></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu_right">
-                                            <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
-                                                <span class="icon icon-info me-1"></span>
-                                                Подробнее
-                                            </a>
-                                            <a href="#" class="dropdown-menu__link d-flex align-items-center text_size-xs">
-                                                <span class="icon me-1 icon-download"></span>
-                                                Скачать
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- pagination -->
-                    <ul class="pagination pagination_padding d-flex align-items-center justify-content-center">
-                        <li class="pagination__item">
-                            <a href="#" class="pagination__link d-flex align-items-center">
-                                <span class="icon icon-caret-left pagination__icon"></span>
-                                <span class="d-none d-md-block">Назад</span>
-                            </a>
-                        </li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
-                        <li class="pagination__item"><span class="pagination__link active">2</span></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
-                        <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">10</a></li>
-                        <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">20</a></li>
-                        <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">30</a></li>
-                        <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">40</a></li>
-                        <li class="pagination__item d-none d-lg-block"><a href="#" class="pagination__link">50</a></li>
-                        <li class="pagination__item">
-                            <a href="#" class="pagination__link d-flex align-items-center">
-                                <span class="d-none d-md-block">Вперёд</span>
-                                <span class="icon icon-caret-right pagination__icon"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /pagination -->
-                </div>
-                <!-- Connected Traders -->
+                <!-- /trader-tabs -->
             </main>
             <!-- /main -->
         </div>
@@ -593,7 +1238,170 @@
         </div>
     </div>
     <!-- /balance -->
-    
+
+    <!-- invest -->
+    <div class="modal fade" id="invest">
+        <div class="modal-dialog modal-dialog_md">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="tab-section">
+                        <div class="tab-content">
+                            <!-- step-1 -->
+                            <div class="tab-pane active" id="step-1">
+                                <div class="modal__header text_mediumbold text_upper">
+                                    INVEST (STEP 1)
+                                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                                </div>
+                                <div class="modal__body modal__body_padding-sm">
+                                    <div class="mb-xxs text_normal text_size-sm text_dark">
+                                        How much do you want to invest in trader "<span class="text_primary">Имя</span>"?
+                                    </div>
+                                    <input class="text_size-md form-control text_center mb-sm" type="number" value="1000.45"></input>
+                                    <div class="form-group text_center">
+                                        <a href="#step-2" class="btn btn_size-sm w-100 tab-link">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /step-1 -->
+                            <!-- step-2 -->
+                            <div class="tab-pane" id="step-2">
+                                <div class="modal__header text_mediumbold text_upper">
+                                    INVEST (STEP 2)
+                                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                                </div>
+                                <div class="modal__body modal__body_padding">
+                                    <div class="text_dark text_normal text_size-sm mb-xs">Select way of payment</div>
+                                    <div class="radio-list radio-list_clear">
+                                        <label class="radio-list__item active w-100">
+                                            <input type="radio" class="collapse" checked name="withdraw">
+                                            <div class="radio-list__icon icon icon-pay-bank"></div>
+                                            <div class="radio-list__text">Bank transfer</div>
+                                        </label>
+                                        <label class="radio-list__item w-100">
+                                            <input type="radio" class="collapse" name="withdraw">
+                                            <div class="radio-list__icon icon icon-pay-bitcoin"></div>
+                                            <div class="radio-list__text">Crypto transfer</div>
+                                        </label>
+                                        <label class="radio-list__item w-100">
+                                            <input type="radio" class="collapse" name="withdraw">
+                                            <div class="radio-list__icon icon icon-pay-wallet"></div>
+                                            <div class="radio-list__text">Balance <span class="radio-list__value">3054.45 $</span></div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group text_center d-flex btn-group">
+                                        <a href="#step-1" class="btn btn_light btn_size-sm w-100 tab-link">Back</a>
+                                        <a href="#step-3" class="btn btn_size-sm w-100 tab-link">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /step-2 -->
+                            <!-- step-3 -->
+                            <div class="tab-pane" id="step-3">
+                                <div class="modal__header text_mediumbold text_upper">
+                                    INVEST (STEP 3)
+                                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                                </div>
+                                <div class="modal__body modal__body_padding-sm">
+                                    <div class="btn-list btn-list_radio d-flex flex-wrap">
+                                        <label class="btn-list__item d-flex">
+                                            <input type="radio" name="curr" class="collapse" checked>
+                                            <span class="btn btn_transparent w-100">$</span>
+                                        </label>
+                                        <label class="btn-list__item d-flex">
+                                            <input type="radio" name="curr" class="collapse">
+                                            <span class="btn btn_transparent w-100">€</span>
+                                        </label>
+                                        <label class="btn-list__item d-flex">
+                                            <input type="radio" name="curr" class="collapse">
+                                            <span class="btn btn_transparent w-100">PGB</span>
+                                        </label>
+                                    </div>
+                                    <div class="text_dark text_normal text_size-sm mb-xxs">Select Currency</div>
+                                    <div class="form-group_sm">
+                                        <div class="fake-select dropdown">
+                                            <a href="#" class="fake-select__link dropdown-toggle text_size-sm text_normal form-control form-control_clear">
+                                                <span class="fake-select__value">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="me-1 currency-icon">
+                                                            <img src="img/icons/us.svg" alt="" class="img-fluid">
+                                                        </span>
+                                                        USD
+                                                    </div>
+                                                </span>
+                                            </a>
+                                            <div class="fake-select__dropdown dropdown-menu">
+                                                <label class="active fake-select__item">
+                                                    <input type="radio" name="currency" checked class="collapse">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="me-1 currency-icon">
+                                                            <img src="img/icons/us.svg" alt="" class="img-fluid">
+                                                        </span>
+                                                        USD
+                                                    </div>
+                                                </label>
+                                                <label class="fake-select__item">
+                                                    <input type="radio" name="currency" class="collapse">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="me-1 currency-icon">
+                                                            <img src="img/icons/ua.svg" alt="" class="img-fluid">
+                                                        </span>
+                                                        UAH
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-xxs text_dark text_normal text_size-sm">NAME</div>
+                                    <div class="form-group_sm form-wrap">
+                                        <input class="form-control form-control_xs" id="name"></input>
+                                        <a href="#name" class="copy-link icon form-icon_right icon-doc"></a>
+                                    </div>
+                                    <div class="mb-xxs text_dark text_normal text_size-sm">IBAN</div>
+                                    <div class="form-group_sm form-wrap">
+                                        <input class="form-control form-control_xs" id="iban"></input>
+                                        <a href="#iban" class="copy-link icon form-icon_right icon-doc"></a>
+                                    </div>
+                                    <div class="mb-xxs text_dark text_normal text_size-sm">REFERENCE</div>
+                                    <div class="mb-sm"><textarea class="form-control form-control_xs"></textarea></div>
+                                    <div class="form-group text_center d-flex btn-group">
+                                        <a href="#step-2" class="btn btn_light btn_size-sm w-100 tab-link">Back</a>
+                                        <a href="#pending" class="btn btn_size-sm w-100 modal-open">I PAID</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /step-3 -->
+                        </div>
+                        <div class="modal__footer text_dark text_size-sm"><p>Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте.</p> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /invest -->
+
+    <!-- pending -->
+    <div class="modal fade" id="pending">
+        <div class="modal-dialog modal-dialog_md">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    PENDING
+                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                </div>
+                <div class="modal__body modal__body_padding">
+                    <div class="d-flex text_size-sm mb-sm">
+                        <span class="icon icon-business me-1"></span>
+                        <div class="text_transparent">
+                            Перевод будет зачислен в ручном режиме в течении 1-3 дней
+                        </div>
+                    </div>
+                    <div class="form-group text_center">
+                        <a href="#" class="btn btn_size-sm modal-close">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /pending -->
 
 
 

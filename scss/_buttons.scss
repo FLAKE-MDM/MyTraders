@@ -15,29 +15,83 @@
     transition: all 0.3s ease-out;
     &:hover{
         color: #fff;
-        background: $primary - 50;
+        background: darken($color: $primary, $amount: 15%);
     }
     &:disabled, &.disabled{
         cursor: default;
         pointer-events: none;
-        background: gray + 30;
+        background: darken($color: gray, $amount: 15%);
         color: rgba(#fff, 0.8);
     }
     &_light{
         background: #EEEBFD;
         color: $black;
         &:hover{
-            background: #EEEBFD - 30;
+            background: darken($color: #EEEBFD, $amount: 5%);
             color: $black;
         }
     }
     &_dark{
         background: #C1C4D0;
         &:hover{
-            background: #C1C4D0 - 30;
+            background: darken($color: #C1C4D0, $amount: 15%);
         }
     }
+    &_outline{
+        color: $primary;
+        border: 1px solid #C1C4D0;
+        border-top: none;
+        background: transparent;
+        border-radius: 0rem 0rem 2.4rem 2.4rem;
+    }
+
+    &_clear{
+        &:not(:hover){
+            background: transparent;
+            color: #838D9B;
+        }
+    }
+
+    &_gray{
+        &:not(:hover){
+            background: #F7F8FA;
+            color: rgba($black, 0.75);
+        }
+    }
+
+    &_square{
+        border-radius: 0.8rem;
+        font-size: 1.5rem;
+        padding: 1.1rem 1.6rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    &_transparent{
+        color: rgba($black, 0.65);
+        border: 1px solid #EEEBFD;
+        background: transparent;
+        border-radius: 0.8rem;
+        font-weight: 900;
+        font-family: 'Inter', sans-serif;
+        padding: 1.75rem 2.44rem;
+
+        @include bp(hv){
+            &:hover{
+                background: none;
+                border-color: $primary;
+                color: rgba($primary, 0.65);
+            }
+        }
+    }
+
     &_size{
+        &-xxs{
+            font-size: 1.5rem;
+            padding: 0.55rem 1.25rem;
+            border-radius: 1.2rem;
+            font-weight: 400;
+        }
         &-xs{
             font-size: 1.5rem;
             padding: 1.3rem 2.44rem 1.2rem;
@@ -60,10 +114,17 @@
            font-size: 1.5rem;
            padding: 1.8rem 2.4rem 1.7rem;
         }
+        &-lg{
+            font-size: 1.5rem;
+            padding: 1.65rem 2.5rem;
+         }
         &-xl{
             font-size: 1.8rem;
             line-height: 2.15rem;
             padding: 1.8rem 4.025rem 1.6rem;
+        }
+        &-xxl{
+            padding: 3rem;
         }
     }
 }

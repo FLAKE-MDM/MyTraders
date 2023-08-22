@@ -39,6 +39,13 @@
         &_sm{
             width: 13.8rem;
         }
+        &_xs{
+            padding: 1.5rem 1.7rem;
+        }
+
+        &.text_size-md{
+            font-size: 1.8rem;
+        }
     }
     &-label{
         display: block;
@@ -59,25 +66,47 @@
     }
     &-check-input{
         flex-shrink: 0;
-        width: 1.6rem;
-        height: 1.6rem;
-        display: inline-block;
-        vertical-align: -0.3rem;
-        margin-right: 1.2rem;
-        border: 1px solid #E0E0E0;
-        background: #E0E0E0;
+        width: 4.4rem;
+        height: 2.4rem;
+        background: rgba($primary, 0.15);
+        padding: 0.2rem;
+        border-radius: 4.4rem;
+        display: inline-flex;
+        border: none;
         cursor: pointer;
-        transition: background-color, border-color 0.3s ease-out;
-        &:hover{
-            background: #000;
-            border-color: #000;
+        transition: all 0.3s ease-out;
+        position: relative;
+
+        &:before{
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: #fff;
+            transition: all 0.3s ease-out;
+            left: 0;
+            top: 0;
+            margin: 0.2rem;
+            position: absolute;
         }
+
+        @include bp(hv){
+            &:hover{
+                background: rgba($primary, 0.5);
+            }
+        }
+
         &:checked{
-            background: #000 url(../img/icons/checkbox.svg) 60% 50% no-repeat;
-            background-size: 12px 9px;
-            border-color: #000;
+            background: $primary;
+            justify-content: flex-end;
+
+            &:before{
+                left: 2rem;
+            }
         }
     }
+
     &-radio-input{
         flex-shrink: 0;
         width: 2rem;
@@ -107,6 +136,10 @@
 }
 textarea.form-control{
     resize: vertical;
+
+    &.form-control_xs{
+        min-height: 8.5rem;
+    }
 }
 
 
@@ -241,7 +274,36 @@ textarea.form-control{
                 background: none;
             }
         }
+
+        &.form-control_clear{
+            border: 1px solid #F7F8FA;
+            height: auto;
+
+            &::after, &::before{
+                right: 1.5rem;
+                bottom: 0;
+                margin: auto 0;
+            }
+        }
+
+        &_decor{
+            padding: 1.5rem 4.8rem 1.5rem 1.6rem;
+            border-radius: 0.8rem;
+            background: #F7F8FA;
+            height: auto;
+
+            @include bp(sm){
+                padding: 1.1rem 4.8rem 1rem 1.5rem;
+            }
+
+            &::after, &::before{
+                right: 1.6rem;
+                bottom: 0;
+                margin: auto 0;
+            }
+        }
     }
+
     &__dropdown{
         position: absolute;
         top: 100%;
@@ -260,6 +322,14 @@ textarea.form-control{
     border-bottom: 1px solid rgba(193, 196, 208, 0.15);
     padding-bottom: 1.2rem;
     margin-bottom: 2.3rem;
+
+    &_clear{
+        border: none;
+        padding: 0;
+        margin-bottom: 1.1rem;
+    }
+
+
     &__item {
         width: 49%;
         background: #FFFFFF;
@@ -274,9 +344,16 @@ textarea.form-control{
         min-height: 5.6rem;
         transition: all 0.3s ease-out;
         font: 400 1.4rem/1.8rem 'Inter', sans-serif;
+
+        &.w-100{
+            width: 100%;
+            margin-bottom: 0.8rem;
+        }
+
         @include bp(xs){
             width: 100%;
         }
+
         &.active, &:hover{
             border-color: #DADADA;
             color: $black;
@@ -287,6 +364,10 @@ textarea.form-control{
         &.icon-pay-bank{
             margin: 0 1.3rem 0 1.2rem;
         }
+    }
+
+    &__value{
+        color: $black;
     }
 }
 
@@ -310,7 +391,7 @@ textarea.form-control{
         top: -0.5rem;
         border-radius: 50%;
         border: 2px solid #fff;
-        right: -9px; 
+        right: -9px;
         cursor: pointer;
         border-radius: 9px;
         background: $primary;
@@ -329,4 +410,51 @@ textarea.form-control{
 }
 .noUi-connect{
     background: linear-gradient(98.17deg, #00C7FF 0.93%, #583AFB 104.1%);
+}
+
+// btn-list
+.btn-list{
+    gap: 0.49rem;
+    position: relative;
+    margin: 0.6rem 0 2rem;
+    position: relative;
+
+    &__item{
+        input:checked+.btn{
+            color: #fff;
+            background: $primary;
+        }
+    }
+
+    &_radio{
+        gap: 0.8rem;
+        margin: 0.5rem 0 1.1rem;
+
+        .btn-list__item{
+            flex-grow: 1;
+            width: 30%;
+
+            input:checked+.btn{
+                background: none;
+                border-color: $primary;
+                color: rgba($primary, 0.65);
+            }
+        }
+    }
+}
+
+// check-item
+.check-item{
+    margin-bottom: 2.2rem;
+}
+
+// btn-group
+.btn-group{
+    gap: 0.8rem;
+}
+.currency-icon{
+    width: 2.2rem;
+}
+.form-wrap{
+    position: relative;
 }

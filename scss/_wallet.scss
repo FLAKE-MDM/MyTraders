@@ -4,18 +4,31 @@
             flex-wrap: wrap;
         }
         &__buttons{
+            @include bp(xl){
+                flex-shrink: 0;
+            }
+
+            @include bp(md){
+                flex-shrink: 1;
+
+                .btn{
+                    width: 100%;
+
+                    &:first-of-type{
+                        @include bp(md){
+                            margin: 0 0 1rem;
+                        }
+                    }
+                }
+            }
+
             @include bp(sm){
                 width: 100%;
-                margin-top: 1rem;
-            }
-            .btn:first-of-type{
-                @include bp(xs){
-                    margin: 0 0 1rem;
-                }
+                margin-top: 2rem;
             }
         }
         &__image{
-            margin-right: 2.4rem;
+            margin-right: 2.7rem;
             flex-shrink: 0;
         }
         &__text{
@@ -23,6 +36,64 @@
         }
         &__title{
             margin: -0.2rem 0 0.6rem;
+        }
+    }
+
+    &-item{
+        position: relative;
+        line-height: normal;
+
+        &:first-child{
+            padding-right: 2.7rem;
+            margin-right: 2.3rem;
+
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                height: 2.9rem;
+                border-right: 1px solid rgba(218, 218, 218, 0.45);
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+            }
+
+            @include bp(xl){
+                margin-bottom: 0.5rem;
+
+                &:after{
+                    display: none;
+                }
+            }
+
+            @include bp(sm){
+                &:after{
+                    display: block;
+                }
+            }
+        }
+
+        &_lg{
+            padding-right: 4.5rem;
+            border-right: 1px solid rgba(218, 218, 218, 0.45);
+            margin-right: 2.4rem;
+
+            @include bp(xxl){
+                padding-right: 2.5rem;
+            }
+
+            @include bp(xl){
+                flex-shrink: 0;
+            }
+
+            @include bp(sm){
+                border: none;
+                margin-bottom: 1rem;
+                padding-right: 0;
+                margin-right: 0;
+                width: 100%;
+            }
         }
     }
 }

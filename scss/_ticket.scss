@@ -43,7 +43,7 @@
             flex-shrink: 0;
             @include bp(sm-up){
                 &:hover{
-                    background: #F7F8FA - 30;
+                    background: darken($color: #F7F8FA, $amount: 10%);
                 }
             }
             @include bp(xs){

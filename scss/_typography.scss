@@ -19,6 +19,9 @@ p{
     margin-bottom: 1.6rem;
 }
 .mb{
+    &-xxs{
+        margin-bottom: 0.5rem;
+    }
     &-xs{
         margin-bottom: 1.7rem;
     }
@@ -155,15 +158,12 @@ p{
             }
         }
         &-xl{
-            font-size: 5.2rem;
-            line-height: 6.1rem;
+            font-size: 6.4rem;
+            line-height: 6.6rem;
+            text-transform: uppercase;
             @include bp(md){
-                font-size: 4rem;
-                line-height: 5rem;
-            }
-            @include bp(sm){
-                font-size: 3.2rem;
-                line-height: 3.8rem;
+                font-size: 4.5rem;
+                line-height: 4.6rem;
             }
         }
     }
@@ -202,6 +202,9 @@ p{
     &_dark{
         color: $dark;
     }
+    &_transparent{
+        opacity: 0.75;
+    }
     &_primary{
         color: $primary;
     }
@@ -210,6 +213,9 @@ p{
     }
     &_success{
         color: $success;
+    }
+    &_success-dark{
+        color: #53AE94;
     }
     &_warning{
         color: $warning;

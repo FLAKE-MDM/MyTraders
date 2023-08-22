@@ -16,36 +16,38 @@
             display: none;
         }
     }
+    .title_size-xl{
+        @include bp(md){
+            margin-bottom: 2.7rem;
+        }
+    }
     &__text{
-        padding: 11.8rem 0 16rem;
-        width: 65%;
-        position: relative;
-        z-index: 2;
+        padding: 12.8rem 0.9rem 16rem;
+        width: 47rem;
         @include bp(lg){
             padding: 5rem 0 2rem;
+            width: 43rem;
         }
-        @include bp(sm){
+        @include bp(md){
             width: 100%;
-            padding: 0.3rem 0 0;
+            padding: 2.9rem 0 0;
+            text-align: center;
         }
     }
     &__image{
         position: absolute;
         top: 0;
         right: 0;
-        margin: -2.2rem -27.2% 0 0;
+        margin: 10.6rem -14.3% 0 0;
         @include bp(lg){
-            width: 83%;
-            margin: 0 -14% 0 0;
+            width: 64%;
+            margin: 6rem -7% 0 0;
         }
         @include bp(md){
             order: -1;
             position: static;
             width: auto;
-            margin: -5.2rem -28.5% 0 -33.5%;
-        }
-        @include bp(sm){
-            margin-left: -44.5%;
+            margin: 0 -1rem 5.3rem;
         }
     }
     &__check-list{
@@ -58,15 +60,26 @@
         }
         .btn{
             margin-right: 3.2rem;
+            flex-shrink: 0;
             @include bp(sm){
                 margin-right: 1rem;
-                padding: 1.8rem 4.2rem 1.7rem;
+                padding: 1.8rem 4.2rem 1.6rem;
             }
         }
         a{
             @include bp(sm){
                 margin-bottom: 2rem;
             }
+        }
+    }
+    &__description{
+        color: #4D5773;
+        font-size: 20px;
+        margin-bottom: 7.1rem;
+
+        @include bp(md){
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
         }
     }
 }

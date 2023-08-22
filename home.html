@@ -11,6 +11,61 @@
 </head>
 <body>
     <div class="wrap section-before" id="wrap">
+        <!-- aside -->
+        <aside class="aside pane pane_left aside_home d-xxl-none" id="aside">
+            <div class="user-info d-flex align-items-center justify-content-between">
+                <a href="#profile" class="d-flex align-items-center user-info__dropdown-toggle modal-open">
+                    <div class="user-info__image"><img src="img/content/user-2.jpg" alt=""></div>
+                    <div class="user-info__text">
+                        <div class="text_normal user-info__name text_size-sm">Alexander Morgan</div>
+                        <div class="text_primary text_mediumbold">3054.45 $</div>
+                    </div>
+                </a>
+                <a href="#balance" class="btn btn_size-xs modal-open">Пополнить</a>
+            </div>
+            <ul class="menu-list mb-md">
+                <li class="menu-list__item">
+                    <a href="personal-cabinet.html" class="menu-list__link">
+                        <span class="icon icon-widget menu-list__icon"></span>Главная
+                    </a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="traders.html" class="menu-list__link active">
+                        <span class="icon icon-chart menu-list__icon"></span>Трейдеры
+                    </a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="wallet.html" class="menu-list__link">
+                        <span class="icon icon-wallet menu-list__icon"></span>Кошелёк
+                    </a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="security.html" class="menu-list__link">
+                        <span class="icon icon-shield menu-list__icon"></span>Безопасность
+                    </a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="referral.html" class="menu-list__link">
+                        <span class="icon icon-bag menu-list__icon"></span>Реф.программа
+                    </a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="support.html" class="menu-list__link">
+                        <span class="icon icon-chat menu-list__icon"></span>Поддержка
+                    </a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">
+                        <span class="icon icon-off menu-list__icon"></span>Выход
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright aside__copyright text_size-sm">
+                <div class="text_normal">Copyright © 2022</div>
+                <div class="text_dark">Все права защищены. </div>
+            </div>
+        </aside>
+        <!-- /aside -->
         <!-- header -->
         <header class="header d-flex align-items-center">
             <a href="index.html" class="logo header__logo d-flex align-items-center">
@@ -73,15 +128,28 @@
                 </ul>
             </nav>
             <div class="login">
-                <div class="d-none d-xl-flex d-flex align-items-center">
+                <!-- <div class="d-none d-xl-flex d-flex align-items-center">
                     <a href="#login" class="d-flex login__link align-items-center modal-open">
                         <div class="circle-image login__image"><div class="circle-image__icon icon icon-user-circle"></div></div>
                         Войти
                     </a>
                     <span class="text_dark login__separator">или</span>
                     <a href="#registration" class="btn modal-open">Регистрация</a>
+                </div> -->
+                <!-- <a href="#login" class="login__mobile-link modal-open icon d-xl-none icon-login"></a> -->
+                <div class="align-items-center d-none d-xxl-flex">
+                    <div class="user-info">
+                        <a href="#profile" class="d-flex align-items-center user-info__dropdown-toggle modal-open">
+                            <div class="user-info__image"><img src="img/content/user-2.jpg" alt=""></div>
+                            <div class="user-info__text">
+                                <div class="text_normal user-info__name text_size-sm">Alexander Morgan</div>
+                                <div class="text_primary text_mediumbold">3054.45 $</div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#balance" class="btn btn_size-xs modal-open">Пополнить</a>
                 </div>
-                <a href="#login" class="login__mobile-link modal-open icon d-xl-none icon-login"></a>
+                <a href="#aside" class="login__mobile-link pane-open icon d-xxl-none icon-login"></a>
             </div>
             <a href="#navbar" class="btn-menu pane-open d-xl-none">
                 <div class="btn-menu__item"></div>
@@ -95,14 +163,20 @@
             <div class="container">
                 <div class="d-flex flex-wrap">
                     <div class="preview-section__text">
-                        <div class="title_size-xl text_mediumbold mb-lg text_center_sm">Инвестируй с лучшими крипто-трейдерами </div>
-                        <ul class="check-list preview-section__check-list text_dark">
-                            <li class="check-list__item">Сервис автоматического копирования сделок на криптовалютных биржах. </li>
-                            <li class="check-list__item">Наш сервис абсолютно бесплатный для  всех трейдеров</li>
-                        </ul>
-                        <div class="d-flex flex-wrap align-items-center preview-section__btn-group">
+                        <div class="title_size-xl text_bold mb-lg text_center_md">Copy trades <br class="d-lg-none">in 1 click</div>
+                        <div class="preview-section__description">Simply choose an elite trader to copy, and when they trade, so do you</div>
+                        <div class="preview-section__image">
+                            <a href="#" class="play-btn play-btn_lg"></a>
+                            <img src="img/preview.png" alt="" class="img-fluid d-none d-lg-block">
+                            <img src="img/preview-m.png" alt="" class="img-fluid d-lg-none w-100">
+                        </div>
+                        <div class="d-flex align-items-center preview-section__btn-group">
                             <a href="#" class="btn btn_size-xl">Создать аккаунт</a>
-                            <a href="#" class="d-flex align-items-center text_normal">Подробнее  <span class="icon icon-arrow-right icon_margin-s-md"></span></a>
+                            <a href="#" class="d-flex align-items-center text_normal">
+                                <span class="d-none d-lg-inline">Смотреть презентацию</span>
+                                <span class="d-lg-none">Подробнее</span>
+                                <span class="icon icon-arrow-right icon_margin-s-md"></span>
+                            </a>
                         </div>
                         <div class="rating-block d-flex align-items-center">
                             <div class="rating-block__logo"><img src="img/logo-trustpilot.svg" alt="" class="img-fluid"></div>
@@ -112,13 +186,12 @@
                             <div class="rating-num text_dark">4.5</div>
                         </div>
                     </div>
-                    <div class="preview-section__image"><img src="img/preview.png" alt="" class="img-fluid"></div>
                 </div>
             </div>
         </div>
         <!-- /preview -->
         <!-- logos-section -->
-        <div class="logos-section bg_radial">
+        <div class="logos-section">
             <div class="container">
                 <div class="logos-slider-wrap">
                     <div class="logos-slider swiper">
@@ -172,152 +245,290 @@
         </div>
         <!-- /logos-section -->
         <!-- about-section -->
-        <div class="about-section section-before">
+        <div class="about-section">
             <div class="container">
-                <div class="tab-section">
-                    <ul class="tab-nav d-flex">
-                        <li class="tab-nav__item"><a href="#passive" class="tab-link tab-nav__link active"><span class="tab-nav__icon icon icon-wallet"></span>Пассивный заработок</a></li>
-                        <li class="tab-nav__item"><a href="#public" class="tab-link tab-nav__link"><span class="tab-nav__icon icon icon-candlestick"></span>публичный трейдинг</a></li>
-                    </ul>
-                    <div class="tab-content text_center_sm">
-                        <!-- passive -->
-                        <div class="tab-pane active" id="passive">
-                            <div class="title_size-lg text_center text_mediumbold mb-xs mt-md">Пассивный заработок</div>
-                            <div class="title-after text_dark text_center mb-xl no-change_margin">Платформа управления инвестициями на рынке криптовалют которая позволяет частным инвеострам копировать реальтные сделки умспешных трейдеров</div>
-                            <!-- about-item -->
-                            <div class="about-item mb-xl d-md-flex align-items-center no-change_margin">
-                                <div class="about-item__image"><img src="img/passive-1.svg" alt="" class="img-fluid"></div>
-                                <div class="about-item__text">
-                                    <div class="title_size-sm text_normal mb-sm">Пассивный заработок никогдa еще не был таким простым</div>
-                                    <p class="text_dark text_size-sm">Вам даже не нужно знать что такое трейдинг и криптовалюта. Вашим депозитом <br class="d-none d-lg-block">будет управлять один из лучших трейдеров мира</p>
-                                </div>
+                <div class="title_size-lg text_center text_mediumbold mb-md mt-md">About us</div>
+                <div class="row row_lg">
+                    <div class="col-md-6 d-flex">
+                        <!-- about-item -->
+                        <div class="about-item box d-flex align-items-center">
+                            <div class="about-item__image about-item__image_first"><img src="img/elite.svg" alt="Only elite traders" class="img-fluid"></div>
+                            <div class="about-item__text">
+                                <div class="title_size-xs text_normal mb-xs">Only elite traders</div>
+                                <p>Only profitable traders with a trading history of at least 1 year. No beginners here</p>
                             </div>
-                            <!-- /about-item -->
-                            <!-- about-item -->
-                            <div class="about-item mb-md d-md-flex align-items-center">
-                                <div class="about-item__image about-item__image_margin-mobile order-md-2"><img src="img/passive-2.svg" alt="" class="img-fluid"></div>
-                                <div class="about-item__text">
-                                    <div class="title_size-sm text_normal mb-sm">Мы собираем статистику трейдеров по всем елкам и выводим результаты</div>
-                                    <p class="text_dark text_size-sm">Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
-                                </div>
-                            </div>
-                            <!-- /about-item -->
-                            <div class="dots-block mb-md">
-                                <div class="dots-block__item"></div>
-                                <div class="dots-block__item"></div>
-                                <div class="dots-block__item"></div>
-                            </div>
-                            <!-- work-section -->
-                            <div class="work-section mb-lg">
-                                <div class="title_size-md text_mediumbold text_center mb-md">Как это работает?</div>
-                                <div class="row row_lg">
-                                    <div class="col-md-4 d-flex">
-                                        <div class="work-item">
-                                            <div class="work-item__image"><img src="img/icons/add-user.svg" alt="" class="img-fluid"></div>
-                                            <div class="title_size-xs text_normal work-item__title">Зарегистрируйтесь</div>
-                                            <p class="text_size-sm text_dark">На бирже Binance и на нашем сайте</p>
-                                            <p><a href="#" class="btn">Регистрация</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 d-flex">
-                                        <div class="work-item">
-                                            <div class="work-item__image"><img src="img/icons/bitcoin-wallet.svg" alt="" class="img-fluid"></div>
-                                            <div class="title_size-xs text_normal work-item__title">Пополните депозит</div>
-                                            <p class="text_size-sm text_dark">Пополните депозит на Binance и подпишитесь на лучшего трейдера в нашем сервисе</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 d-flex">
-                                        <div class="work-item">
-                                            <div class="work-item__image"><img src="img/icons/gold-bars.svg" alt="" class="img-fluid"></div>
-                                            <div class="title_size-xs text_normal work-item__title">Можете отдыхать</div>
-                                            <p class="text_size-sm text_dark">Пока вы отдыхаете  профессиональные трейдеры зарабатывают деньги</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /work-section -->
                         </div>
-                        <!-- /passive -->
-                        <!-- public -->
-                        <div class="tab-pane" id="public">
-                            <div class="title_size-lg text_center text_mediumbold mb-xs mt-md">Публичный трейдинг</div>
-                            <div class="title-after text_dark text_center mb-lg">Платформа управления инвестициями на рынке криптовалют которая позволяет частным инвеострам копировать реальтные сделки умспешных трейдеров</div>
-                            <!-- about-item -->
-                            <div class="about-item about-item_margin d-md-flex align-items-center">
-                                <div class="about-item__image about-item__image_margin"><img src="img/public-1.svg" alt="" class="img-fluid"></div>
-                                <div class="about-item__text about-item__text_padding">
-                                    <div class="title_size-sm text_normal mb-sm">Торгуй на своей бирже, попади в список топ трейдеров и собирай платных подписчиков со всего мира</div>
-                                    <p class="text_dark text_size-sm">Больше не нужно заводить телеграм-канал для публикации сигналов и тратить огромные деньги на рекламу. Мы сами привлечем аудиторию и автоматизируем процесс взаимодействия с подписчиками. Вам остается только сфокусироваться на торговле</p>
-                                </div>
+                        <!-- /about-item -->
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <!-- about-item -->
+                        <div class="about-item box mb-md d-flex align-items-center">
+                            <div class="about-item__image about-item__image_margin"><img src="img/automatic.svg" alt="100% Automatic<" class="img-fluid"></div>
+                            <div class="about-item__text">
+                                <div class="title_size-xs text_normal mb-xs">100% Automatic</div>
+                                <p>Copied trades are replicated to your portfolio autimaticaly in real time 24/7
+                                </p>
                             </div>
-                            <!-- /about-item -->
-                            <!-- about-item -->
-                            <div class="about-item d-md-flex align-items-center">
-                                <div class="about-item__image order-md-2"><img src="img/public-2.svg" alt="" class="img-fluid"></div>
-                                <div class="about-item__text">
-                                    <div class="title_size-sm text_normal mb-sm">Все твои сделки будут автоматически открываться у твоих подписчиков</div>
-                                    <p class="text_dark text_size-sm">Вам остается лишь выбрать самого подходящего трейдера и подписаться на него. Все его сделки будут автоматически открываться и закрываться на вашем биржевом аккаунте. В любой момент вы можете отписаться от трейдера или вывести свою прибыль</p>
-                                </div>
-                            </div>
-                            <!-- /about-item -->
-                            <div class="dots-block dots-block_padding mb-md">
-                                <div class="dots-block__item"></div>
-                                <div class="dots-block__item"></div>
-                                <div class="dots-block__item"></div>
-                            </div>
-                            <!-- work-section -->
-                            <div class="work-section mb-lg">
-                                <div class="title_size-md text_mediumbold text_center mb-md">Как это работает?</div>
-                                <div class="row row_lg">
-                                    <div class="col-md-4 d-flex">
-                                        <div class="work-item">
-                                            <div class="work-item__image"><img src="img/icons/add-user.svg" alt="" class="img-fluid"></div>
-                                            <div class="title_size-xs text_normal work-item__title">Зарегистрируйтесь</div>
-                                            <p class="text_size-sm text_dark">На нашем сайте. Создай канал и покдлючи API от своей биржт</p>
-                                            <a href="#" class="btn">Регистрация</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 d-flex">
-                                        <div class="work-item">
-                                            <div class="work-item__image"><img src="img/icons/financial-advisor.svg" alt="" class="img-fluid"></div>
-                                            <div class="title_size-xs text_normal work-item__title">Продолжи торговать
-                                                <br class="d-none d-lg-block">на своей бирже</div>
-                                            <p class="text_size-sm text_dark">Мы собираем статистику по всем
-                                                сделкам и выведем результаты
-                                                в список трейдеров</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 d-flex">
-                                        <div class="work-item">
-                                            <div class="work-item__image"><img src="img/icons/achievement.svg" alt="" class="img-fluid"></div>
-                                            <div class="title_size-xs text_normal work-item__title">Стань одним из лучших трейдеров</div>
-                                            <p class="text_size-sm text_dark">Пока вы отдыхаете  профессиональные трейдеры зарабатывают деньги</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /work-section -->
                         </div>
-                        <!-- /public -->
+                        <!-- /about-item -->
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <!-- about-item -->
+                        <div class="about-item box mb-md d-flex align-items-center">
+                            <div class="about-item__image"><img src="img/usability.svg" alt="Usability" class="img-fluid"></div>
+                            <div class="about-item__text">
+                                <div class="title_size-xs text_normal mb-xs">Usability</div>
+                                <p>Start/stop copying and add/remove funds at any time</p>
+                            </div>
+                        </div>
+                        <!-- /about-item -->
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <!-- about-item -->
+                        <div class="about-item box mb-md d-flex align-items-center">
+                            <div class="about-item__image"><img src="img/income.svg" alt="table passive income" class="img-fluid"></div>
+                            <div class="about-item__text">
+                                <div class="title_size-xs text_normal mb-xs">Stable passive income</div>
+                                <p>Earn passive income without needing extensive knowledge or experience in trading
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /about-item -->
                     </div>
                 </div>
             </div>
         </div>
         <!-- /about-section -->
-        <!-- guide-section -->
-        <div class="guide-section mb-xs">
+        <!-- top-section -->
+        <div class="top-section">
             <div class="container">
-                <div class="title_size-sm text_center text_normal mb-xs no-change">Полная инструкция по публичному трейдингу</div>
-                <div class="embed-responsive video-block">
-                    <video id="video" poster="video/poster.svg">
-                        <source src="video/example.webm" type="video/webm">
-                        <source src="video/example.mp4" type="video/mp4">
-                    </video>
-                    <div class="play-btn"></div>
+                <div class="title_size-md text_center text_mediumbold mb-md top-section__title">TOP 3 traders</div>
+                <div class="swiper top-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="trader-item box trader-item_gold">
+                                <a href="#" class="trader-item__favorite favorite-link icon icon-favorite toggler d-none d-md-block"></a>
+                                <div class="trader-item__user-card user-card d-flex align-items-center">
+                                    <div class="user-card__image circle-image circle-image_lg">
+                                        <img src="img/content/user-11.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="user-card__text p-0 text_normal">
+                                        <div class="text_size-lg user-card__name">Alexander Morgan</div>
+                                        <div class="d-md-flex text_size-sm flex-wrap">
+                                            <div class="text_dark d-flex align-items-center trader-item__followers">
+                                                <span class="icon-user icon"></span>
+                                                41 Followers
+                                            </div>
+                                            <div class="text_danger d-flex align-items-center">
+                                                <span class="icon icon-arrow-down"></span>
+                                                -19.60%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trader-item__info d-flex justify-content-between">
+                                    <div class="trader-item__value text_normal">
+                                        <div class="text_size-sm d-flex align-items-center">ROI <div class="mark ms-1">30D</div></div>
+                                        <div class="text_primary text_size-xl text_mediumbold">+10.31%</div>
+                                    </div>
+                                    <div class="graph">
+                                        <div class="graph__top"><div class="graph__num">235.74%</div></div>
+                                        <div class="graph__bottom"><div class="graph__num">0%</div></div>
+                                        <div class="graph__image">
+                                            <img src="img/graph-gold.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistics text_normal">
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="statistics__item-title">Total PNL  </span>
+                                            <div class="mark">30D</div>
+                                        </div>
+                                        <span>500,000$</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">Win rate</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">Runtime</span>
+                                        <span>360 days</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">AUM</span>
+                                        <span>1000,000$</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn w-100 btn_size-sm">Копировать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="trader-item trader-item_silver box">
+                                <a href="#" class="trader-item__favorite favorite-link icon icon-favorite toggler d-none d-md-block"></a>
+                                <div class="trader-item__user-card user-card d-flex align-items-center">
+                                    <div class="user-card__image circle-image circle-image_lg">
+                                        <img src="img/content/user-12.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="user-card__text p-0 text_normal">
+                                        <div class="text_size-lg user-card__name">Alexander Morgan</div>
+                                        <div class="d-md-flex text_size-sm flex-wrap">
+                                            <div class="text_dark d-flex align-items-center trader-item__followers">
+                                                <span class="icon-user icon"></span>
+                                                41 Followers
+                                            </div>
+                                            <div class="text_danger d-flex align-items-center">
+                                                <span class="icon icon-arrow-down"></span>
+                                                -19.60%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trader-item__info d-flex justify-content-between">
+                                    <div class="trader-item__value text_normal">
+                                        <div class="text_size-sm d-flex align-items-center">ROI <div class="mark ms-1">30D</div></div>
+                                        <div class="text_primary text_size-xl text_mediumbold">+10.31%</div>
+                                    </div>
+                                    <div class="graph">
+                                        <div class="graph__top"><div class="graph__num">235.74%</div></div>
+                                        <div class="graph__bottom"><div class="graph__num">0%</div></div>
+                                        <div class="graph__image">
+                                            <img src="img/graph-silver.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistics text_normal">
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="statistics__item-title">Total PNL  </span>
+                                            <div class="mark">30D</div>
+                                        </div>
+                                        <span>500,000$</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">Win rate</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">Runtime</span>
+                                        <span>360 days</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">AUM</span>
+                                        <span>1000,000$</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn w-100 btn_size-sm">Копировать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="trader-item trader-item_bronze box">
+                                <a href="#" class="trader-item__favorite favorite-link icon icon-favorite toggler d-none d-md-block"></a>
+                                <div class="trader-item__user-card user-card d-flex align-items-center">
+                                    <div class="user-card__image circle-image circle-image_lg">
+                                        <img src="img/content/user-13.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="user-card__text p-0 text_normal">
+                                        <div class="text_size-lg user-card__name">Alexander Morgan</div>
+                                        <div class="d-md-flex text_size-sm flex-wrap">
+                                            <div class="text_dark d-flex align-items-center trader-item__followers">
+                                                <span class="icon-user icon"></span>
+                                                41 Followers
+                                            </div>
+                                            <div class="text_danger d-flex align-items-center">
+                                                <span class="icon icon-arrow-down"></span>
+                                                -19.60%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trader-item__info d-flex justify-content-between">
+                                    <div class="trader-item__value text_normal">
+                                        <div class="text_size-sm d-flex align-items-center">ROI <div class="mark ms-1">30D</div></div>
+                                        <div class="text_primary text_size-xl text_mediumbold">+10.31%</div>
+                                    </div>
+                                    <div class="graph">
+                                        <div class="graph__top"><div class="graph__num">235.74%</div></div>
+                                        <div class="graph__bottom"><div class="graph__num">0%</div></div>
+                                        <div class="graph__image">
+                                            <img src="img/graph-bronze.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistics text_normal">
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="statistics__item-title">Total PNL  </span>
+                                            <div class="mark">30D</div>
+                                        </div>
+                                        <span>500,000$</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">Win rate</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">Runtime</span>
+                                        <span>360 days</span>
+                                    </div>
+                                    <div class="statistics__item d-flex justify-content-between">
+                                        <span class="statistics__item-title">AUM</span>
+                                        <span>1000,000$</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn w-100 btn_size-sm">Копировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn w-100 btn_outline btn_size-xxl">Show all traders</a>
+            </div>
+        </div>
+        <!-- /top-section -->
+        <!-- statistics-section -->
+        <div class="statistics-section mt-lg">
+            <div class="container">
+                <div class="d-flex flex-wrap statistics-section__row">
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-people"></div></div>
+                            <div class="text_normal">Elite traders : </div>
+                        </div>
+                        <div class="statistics-item__num">8</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-people-more"></div></div>
+                            <div class="text_normal">Investors : </div>
+                        </div>
+                        <div class="statistics-item__num">7590</div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-transger"></div></div>
+                            <div class="text_normal">Total invested : </div>
+                        </div>
+                        <div class="statistics-item__num">
+                            $2
+                            <span class="d-none d-md-inline">.000.000</span>
+                            <span class="d-md-none"> million</span>
+                        </div>
+                    </div>
+                    <div class="statistics-item">
+                        <div class="d-flex align-items-center">
+                            <div class="statistics-item__icon"><div class="icon icon-wallet-double"></div></div>
+                            <div class="text_normal">Total profit : </div>
+                        </div>
+                        <div class="statistics-item__num">
+                            $1
+                            <span class="d-none d-md-inline">.000.000</span>
+                            <span class="d-md-none"> million</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- /guide-section -->
+        <!-- /statistics-section -->
         <div class="dots-block mb-md pt-0">
             <div class="dots-block__item"></div>
             <div class="dots-block__item"></div>
@@ -325,7 +536,7 @@
         </div>
         <!-- promotion-section -->
         <div class="container">
-            <div class="promotion-section d-md-flex align-items-center mb-lg">
+            <div class="promotion-section d-md-flex align-items-center mb-md">
                 <div class="promotion-section__text">
                     <div class="promotion-section__title mb-sm">
                         <div class="text_upper text_bold">Получай <br class="d-md-none"><span class="text_secondary">7% бонуса</span></div>
@@ -337,451 +548,47 @@
             </div>
         </div>
         <!-- /promotion-section -->
-        <!-- statistics-section -->
-        <div class="statistics-section bg_radial">
+        <!-- work-section -->
+        <div class="work-section mb-xs">
             <div class="container">
-                <div class="title_size-sm text_center text_normal mb-lg no-change no-change_margin">Статистика нашего проекта</div>
-                <div class="d-flex flex-wrap statistics-section__row">
-                    <div class="statistics-item">
-                        <div class="d-flex align-items-center">
-                            <div class="statistics-item__icon"><div class="icon icon-people"></div></div>
-                            <div class="text_normal">Кол-во трейдеров</div>
-                        </div>
-                        <div class="statistics-item__num">30</div>
-                    </div>
-                    <div class="statistics-item">
-                        <div class="d-flex align-items-center">
-                            <div class="statistics-item__icon"><div class="icon icon-people-more"></div></div>
-                            <div class="text_normal">Кол-во инвесторов</div>
-                        </div>
-                        <div class="statistics-item__num">1.000</div>
-                    </div>
-                    <div class="statistics-item">
-                        <div class="d-flex align-items-center">
-                            <div class="statistics-item__icon"><div class="icon icon-transger"></div></div>
-                            <div class="text_normal">Кол-во сделок</div>
-                        </div>
-                        <div class="statistics-item__num">14.000</div>
-                    </div>
-                    <div class="statistics-item">
-                        <div class="d-flex align-items-center">
-                            <div class="statistics-item__icon"><div class="icon icon-wallet-double"></div></div>
-                            <div class="text_normal">Объем инвестиций</div>
-                        </div>
-                        <div class="statistics-item__num">$ 14M</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /statistics-section -->
-        <!-- statistics-tabs -->
-        <div class="statistics-tabs">
-            <div class="container">
-                <div class="tab-section">
-                    <ul class="tab-nav d-flex">
-                        <li class="tab-nav__item"><a href="#best" class="tab-link tab-nav__link active"><span class="tab-nav__icon icon icon-trophy"></span>Лучшие трейдеры</a></li>
-                        <li class="tab-nav__item"><a href="#last" class="tab-link tab-nav__link"><span class="tab-nav__icon icon icon-ticket"></span>Последние сделки</a></li>
-                    </ul>
-                    <div class="tab-content tab-content_padding">
-                        <div class="tab-pane active" id="best">
-                            <div class="table-responsive">
-                                <table class="table statistics-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Пользователь</th>
-                                            <th>Биржа</th>
-                                            <th>Доход за месяц</th>
-                                            <th>Уровень риска</th>
-                                            <th>Подписчики</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-up me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-2.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-down me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-3.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-up me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-4.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-up me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-5.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-down me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="last">
-                            <div class="table-responsive">
-                                <table class="table statistics-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Пользователь</th>
-                                            <th>Биржа</th>
-                                            <th>Доход за месяц</th>
-                                            <th>Уровень риска</th>
-                                            <th>Подписчики</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-1.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-up me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-2.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-down me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-3.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-up me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-4.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-up me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="user-card d-inline-flex align-items-center">
-                                                <div class="user-card__image circle-image circle-image_md ">
-                                                    <img src="img/content/user-5.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="user-card__text">
-                                                    <p class="text_normal">Alexander</p>
-                                                    <p class="text_dark text_size-xs">Morgan</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-binance me-1"></span>Binance</div>
-                                            </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-arrow-down me-1"></span>84%
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="dot dot_sm bg_warning-dark me-1"></span>Низкий
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="icon icon-user-primary me-1"></span>97,451
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /statistics-tabs -->
-        <!-- team -->
-        <div class="team-section section-before">
-            <div class="container">
-                <div class="text_center title_size-lg mb-xs text_mediumbold">Наша команда</div>
-                <div class="title-after text_dark mb-xl text_center">Платформа управления инвестициями на рынке криптовалют которая позволяет частным инвеострам копировать реальтные сделки умспешных трейдеров</div>
+                <div class="title_size-md text_mediumbold text_center mb-md">How it works?</div>
                 <div class="row row_lg">
-                    <div class="col-md-4">
-                        <div class="team-item">
-                            <div class="team-item__text">
-                                <div class="team-item__name text_size-md text_normal">Alexander Morgan</div>
-                                <div class="text_dark text_size-sm">UX Designer</div>
-                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                    <div class="col-md-4 d-flex">
+                        <div class="work-item">
+                            <div class="work-item__image"><img src="img/works-1.svg" alt="" class="img-fluid"></div>
+                            <div class="work-item__text">
+                                <div class="title_size-xs text_normal work-item__title">1. Register</div>
+                                <p class="text_size-sm text_dark">На бирже Binance и на нашем сайте</p>
+                                <p><a href="#" class="btn">Регистрация</a></p>
                             </div>
-                            <div class="team-item__image"><img src="img/content/team-1.png" alt="" class="img-fluid"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="team-item">
-                            <div class="team-item__text">
-                                <div class="team-item__name text_size-md text_normal">Vladimir Wermoot</div>
-                                <div class="text_dark text_size-sm">Developer</div>
-                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                    <div class="col-md-4 d-flex">
+                        <div class="work-item">
+                            <div class="work-item__image"><img src="img/works-2.svg" alt="" class="img-fluid"></div>
+                            <div class="work-item__text">
+                                <div class="title_size-xs text_normal work-item__title">2. Select trader</div>
+                                <p class="text_size-sm text_dark">Пока вы отдыхаете  профессиональные трейдеры зарабатывают деньги</p>
                             </div>
-                            <div class="team-item__image"><img src="img/content/team-2.png" alt="" class="img-fluid"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="team-item">
-                            <div class="team-item__text">
-                                <div class="team-item__name text_size-md text_normal">Alexander Morgan</div>
-                                <div class="text_dark text_size-sm">Marketing specialist</div>
-                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                    <div class="col-md-4 d-flex">
+                        <div class="work-item">
+                            <div class="work-item__image"><img src="img/works-3.svg" alt="" class="img-fluid"></div>
+                            <div class="work-item__text">
+                                <div class="title_size-xs text_normal work-item__title">3. Top up trader’s balance</div>
+                                <p class="text_size-sm text_dark">Пополните депозит на Binance и подпишитесь на лучшего трейдера в нашем сервисе</p>
                             </div>
-                            <div class="team-item__image"><img src="img/content/team-3.png" alt="" class="img-fluid"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /team -->
+        <!-- /work-section -->
         <!-- faq -->
         <div class="faq-section mb-md">
             <div class="container">
-                <div class="text_center title_size-md mb-md text_mediumbold">Ответы на часто задаваемые вопросы</div>
+                <div class="text_center title_size-md mb-md text_mediumbold">F.A.Q</div>
                 <div class="box bg_inversion">
                     <div class="faq-item active">
                         <div class="faq-item__icon icon icon-question"></div>
@@ -828,6 +635,49 @@
             </div>
         </div>
         <!-- /faq -->
+        <!-- team -->
+        <div class="team-section">
+            <div class="container">
+                <div class="text_center title_size-md mb-xl text_mediumbold">Our team</div>
+                <div class="row row_lg">
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="team-item__text">
+                                <div class="team-item__name text_size-md text_normal">Alexander Morgan</div>
+                                <div class="text_dark text_size-sm">UX Designer</div>
+                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="team-item__image"><img src="img/content/team-1.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="team-item__text">
+                                <div class="team-item__name text_size-md text_normal">Vladimir Wermoot</div>
+                                <div class="text_dark text_size-sm">Developer</div>
+                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="team-item__image"><img src="img/content/team-2.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <div class="team-item__text">
+                                <div class="team-item__name text_size-md text_normal">Alexander Morgan</div>
+                                <div class="text_dark text_size-sm">Marketing specialist</div>
+                                <a href="#" class="team-item__link" target="_blank"><img src="img/icons/linkedIn.svg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="team-item__image"><img src="img/content/team-3.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trade-section">
+                    <div class="text_center title_size-md mb-md mt-xs text_mediumbold trade-section__title">Can trade good?</div>
+                    <div class="text_center mb-xs"><a href="#" class="btn btn_size-xl">join as a trader</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- /team -->
         <!-- footer -->
         <footer class="footer">
             <div class="container">
@@ -1022,6 +872,110 @@
         </div>
     </div>
     <!-- /registration -->
+
+    <!-- profile -->
+    <div class="modal fade" id="profile">
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    Профиль
+                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                </div>
+                <div class="modal__user-card user-card d-flex align-items-center">
+                    <div class="user-card__image circle-image circle-image_lg">
+                        <img src="img/content/user-8.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="user-card__text">
+                        <p class="text_normal text_size-lg">Alexander Morgan</p>
+                        <p class="text_dark text_size-sm">ID 459368942</p>
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-email-primary form-icon"></span>
+                                <input type="email" class="form-control" placeholder="E-mail" value="whemper@gmail.com">
+                            </label>
+                        </div>
+                        <div class="text_upper text_mediumbold mb-xs">Изменить пароль</div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-lock-primary form-icon"></span>
+                                <input type="password" class="form-control" placeholder="Введите действующий пароль">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-lock-primary form-icon"></span>
+                                <input type="password" class="form-control" placeholder="Новый пароль">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="icon icon-lock-primary form-icon"></span>
+                                <input type="password" class="form-control" placeholder="Пароль еще раз">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn_size-sm w-100">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /profile -->
+
+    <!-- balance -->
+    <div class="modal fade" id="balance">
+        <div class="modal-dialog modal-dialog_md">
+            <div class="modal__content">
+                <div class="modal__header text_mediumbold text_upper">
+                    Пополнение баланса
+                    <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+                </div>
+                <div class="modal__body modal__body_padding">
+                    <form action="#">
+                        <p class="text_dark text_normal text_size-sm">Выбирите способ пополнения</p>
+                        <div class="radio-list">
+                            <label class="radio-list__item active">
+                                <input type="radio" class="collapse" checked name="payment">
+                                <div class="radio-list__icon icon icon-pay-bank"></div>
+                                <div class="radio-list__text">Банковский платеж</div>
+                            </label>
+                            <label class="radio-list__item">
+                                <input type="radio" class="collapse" name="payment">
+                                <div class="radio-list__icon icon icon-pay-bitcoin"></div>
+                                <div class="radio-list__text">Bitcoin</div>
+                            </label>
+                            <label class="radio-list__item">
+                                <input type="radio" class="collapse" name="payment">
+                                <div class="radio-list__icon icon icon-pay-ethereum"></div>
+                                <div class="radio-list__text">Ethereum</div>
+                            </label>
+                            <label class="radio-list__item">
+                                <input type="radio" class="collapse" name="payment">
+                                <div class="radio-list__icon icon icon-pay-tether"></div>
+                                <div class="radio-list__text">Tether USDT</div>
+                            </label>
+                        </div>
+                        <p class="text_dark text_normal text_size-sm">Сумма пополнения</p>
+                        <input class="range-input form-control text_center" id="range-value"></input>
+                        <div class="range-block d-flex align-items-center">
+                            <div class="text_dark text_size-sm text_normal">10</div>
+                            <div id="range"></div>
+                            <div class="text_dark text_size-sm text_normal">1M</div>
+                        </div>
+                        <div class="form-group text_center">
+                            <button class="btn btn_size-sm">Перейти к оплате</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /balance -->
 
 
 
