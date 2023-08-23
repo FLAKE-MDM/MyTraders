@@ -6,15 +6,18 @@ a{
         color: $secondary;
     }
 }
-// .link_underline{
-//     display: inline-block;
-//     padding-bottom: 0.8rem;
-//     border-bottom: 1px solid $primary;
-//     &:hover{
-//         text-decoration: none!important;
-//         border-color: transparent;
-//     }
-// }
+
+.link_underline{
+    border-bottom: 1px dashed $black;
+    height: auto;
+    line-height: 100%;
+
+    &:hover{
+        text-decoration: none!important;
+        border-color: transparent;
+        cursor: help;
+    }
+}
 p{
     margin-bottom: 1.6rem;
 }
