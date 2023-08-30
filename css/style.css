@@ -6710,53 +6710,20 @@ textarea.form-control.form-control_xs {
 
 .graph {
   position: relative;
-  padding-left: 5.3rem;
-  margin-top: -0.6rem;
-}
-@media only screen and (max-width: 767px) {
-  .graph {
-    margin-left: -3rem;
-  }
-}
-.graph__top {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0.7rem;
-  left: 0;
-  right: 0;
-}
-.graph__top:after {
-  display: block;
-  content: "";
-  height: 0.1rem;
   flex-grow: 1;
-  background: #F0F3FA;
+  margin: -3.7rem -1.2rem -3rem 1.9rem;
 }
-.graph__num {
-  flex-shrink: 0;
-  text-align: right;
-  margin-right: 0.8rem;
-  color: #838D9B;
-  font-size: 0.8rem;
-  font-weight: 400;
-  line-height: normal;
-  width: 4rem;
+.graph .apexcharts-gridline {
+  display: none;
 }
-.graph__bottom {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0.6rem;
-  left: 0;
-  right: 0;
-}
-.graph__bottom:after {
+.graph .apexcharts-gridline:nth-of-type(2) {
   display: block;
-  content: "";
-  height: 0.1rem;
-  flex-grow: 1;
-  background: #F0F3FA;
+}
+.graph .apexcharts-xaxis-tick {
+  display: none;
+}
+.graph .apexcharts-canvas {
+  pointer-events: none;
 }
 
 .statistics {

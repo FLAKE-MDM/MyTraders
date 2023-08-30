@@ -1326,3 +1326,221 @@ if(document.querySelector("#chart-historyDeals-180")){
   historyDeals180.render();
 }
 
+// graph
+let graphOptions = {
+  series: [{
+    name: 'series1',
+    data: [0, 235, 200, 0]
+  },],
+  chart: {
+    height: 100,
+    type: 'area',
+    fontFamily: "Roboto",
+    toolbar: {
+      show: false,
+    },
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    type: 'date',
+    categories: ["1", "10", "20", "30"],
+    labels: {
+      show: false
+    }
+  },
+  tooltip: {
+    enabled: false
+  },
+  stroke: {
+    colors: ["#583AFB"],
+    width: 2
+  },
+  yaxis: {
+    labels: {
+      formatter: function (value, index) {
+        if (index === 0 || index === 3) {
+          return value.toFixed(2);  // Форматируйте значение как вам нужно
+        }
+        return '';
+      },
+      style: {
+        colors: '#838D9B',
+        fontSize: '8px'
+      }
+    }
+  },
+  fill: {
+    colors: ['#583AFB']
+  },
+};
+
+let graphOptionsGold = {
+  series: [{
+    name: 'series1',
+    data: [0, 350, 15, 50, 150, 0]
+  },],
+  chart: {
+    height: 100,
+    type: 'area',
+    fontFamily: "Roboto",
+    toolbar: {
+      show: false,
+    },
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    type: 'date',
+    categories: ["1", "10", "20", "30", "40", "50"],
+    labels: {
+      show: false
+    }
+  },
+  tooltip: {
+    enabled: false
+  },
+  stroke: {
+    colors: ["#E4C471"],
+    width: 2
+  },
+  yaxis: {
+    labels: {
+      formatter: function (value, index) {
+        if (index === 0 || index === 3) {
+          return value.toFixed(2);  // Форматируйте значение как вам нужно
+        }
+        return '';
+      },
+      style: {
+        colors: '#838D9B',
+        fontSize: '8px'
+      }
+    }
+  },
+  fill: {
+    colors: ['#E4C471']
+  },
+};
+
+let graphOptionsSilver = {
+  series: [{
+    name: 'series1',
+    data: [0, 250, 200, 0]
+  },],
+  chart: {
+    height: 100,
+    type: 'area',
+    fontFamily: "Roboto",
+    toolbar: {
+      show: false,
+    },
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    type: 'date',
+    categories: ["1", "10", "20", "30"],
+    labels: {
+      show: false
+    }
+  },
+  tooltip: {
+    enabled: false
+  },
+  stroke: {
+    colors: ["#9DA0AD"],
+    width: 2
+  },
+  yaxis: {
+    labels: {
+      formatter: function (value, index) {
+        if (index === 0 || index === 3) {
+          return value.toFixed(2);  // Форматируйте значение как вам нужно
+        }
+        return '';
+      },
+      style: {
+        colors: '#838D9B',
+        fontSize: '8px'
+      }
+    }
+  },
+  fill: {
+    colors: ['#9DA0AD']
+  },
+};
+
+let graphOptionsBronze = {
+  series: [{
+    name: 'series1',
+    data: [0, 100, 250, 0]
+  },],
+  chart: {
+    height: 100,
+    type: 'area',
+    fontFamily: "Roboto",
+    toolbar: {
+      show: false,
+    },
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    type: 'date',
+    categories: ["1", "10", "20", "30"],
+    labels: {
+      show: false
+    }
+  },
+  tooltip: {
+    enabled: false
+  },
+  stroke: {
+    colors: ["#DCB89E"],
+    width: 2
+  },
+  yaxis: {
+    labels: {
+      formatter: function (value, index) {
+        if (index === 0 || index === 3) {
+          return value.toFixed(2);  // Форматируйте значение как вам нужно
+        }
+        return '';
+      },
+      style: {
+        colors: '#838D9B',
+        fontSize: '8px'
+      }
+    }
+  },
+  fill: {
+    colors: ['#DCB89E']
+  },
+};
+
+let graphArr = document.querySelectorAll(".graph");
+
+for(let item of graphArr){
+
+  if(item.closest('.trader-item_gold')){
+    var graph = new ApexCharts(item, graphOptionsGold);
+    graph.render();
+  }
+  else if(item.closest('.trader-item_silver')){
+    var graph = new ApexCharts(item, graphOptionsSilver);
+    graph.render();
+  }
+  else if(item.closest('.trader-item_bronze')){
+    var graph = new ApexCharts(item, graphOptionsBronze);
+    graph.render();
+  } else{
+    var graph = new ApexCharts(item, graphOptions);
+    graph.render();
+  }
+
+}
