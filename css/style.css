@@ -4218,9 +4218,15 @@ textarea.form-control.form-control_xs {
     margin-bottom: 2.7rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .preview-section__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .preview-section__text {
   padding: 12.8rem 0.9rem 16rem;
-  width: 47rem;
+  width: 45rem;
 }
 @media only screen and (max-width: 1199px) {
   .preview-section__text {
@@ -4236,23 +4242,45 @@ textarea.form-control.form-control_xs {
   }
 }
 .preview-section__image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10.6rem -14.3% 0 0;
+  margin: 10.6rem -16% 0 0;
+  flex-grow: 1;
+  background: url(../img/preview.png) 50% 0 no-repeat;
+  background-size: contain;
+  padding: 30px 8.7%;
+}
+@media only screen and (max-width: 1399px) {
+  .preview-section__image {
+    margin-right: -3%;
+    padding: 2.6rem 7%;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .preview-section__image {
-    width: 64%;
-    margin: 6rem -7% 0 0;
+    margin-top: 6rem;
+    padding: 2rem 6.5%;
   }
 }
 @media only screen and (max-width: 991px) {
   .preview-section__image {
+    width: 70rem;
+    flex-grow: 0;
     order: -1;
-    position: static;
-    width: auto;
-    margin: 0 -1rem 5.3rem;
+    padding: 2.7rem 8rem 4rem;
+    margin: 0 -5rem 5.3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .preview-section__image {
+    width: 62rem;
+    padding: 2.2rem 6.5rem 2.3rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .preview-section__image {
+    width: 44rem;
+    flex-grow: 0;
+    order: -1;
+    padding: 1.6rem 5rem 2rem;
   }
 }
 .preview-section__check-list {
@@ -4284,7 +4312,7 @@ textarea.form-control.form-control_xs {
   }
 }
 .preview-section__description {
-  color: #4D5773;
+  color: #4d5773;
   font-size: 20px;
   margin-bottom: 7.1rem;
 }
@@ -4513,9 +4541,9 @@ textarea.form-control.form-control_xs {
 .embed-responsive:before {
   display: block;
   content: "";
-  padding-top: 56.25%;
+  padding-top: 63%;
 }
-.embed-responsive video {
+.embed-responsive__item {
   position: absolute;
   top: 0;
   bottom: 0;
