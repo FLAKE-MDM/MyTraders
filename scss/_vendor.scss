@@ -12,21 +12,22 @@
     transition: none;
   }
 }
-.tab-content{
-  &_padding{
+.tab-content {
+  &_padding {
     padding-top: 1.6rem;
   }
-  &>.tab-pane, &>.tab-pane-main {
+  & > .tab-pane,
+  & > .tab-pane-main {
     display: none;
   }
-  &>.active {
+  & > .active {
     display: block;
   }
 }
 .fade {
-  transition: opacity .15s linear;
+  transition: opacity 0.15s linear;
 }
-.modal{
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -39,117 +40,118 @@
   outline: 0;
   background: rgba($primary, 0.3);
   backdrop-filter: blur(2px);
-  &.show{
+  &.show {
     transform: none;
   }
-  &__close{
+  &__close {
     position: absolute;
     top: 2.4rem;
     right: 2.4rem;
     border: none;
     background: none;
     border-radius: 50%;
-    @include bp(sm){
+    @include bp(sm) {
       right: 1rem;
       top: 1.4rem;
     }
   }
-  &__content{
+  &__content {
     flex-grow: 1;
     pointer-events: auto;
-    background: #FDFDFD;
+    background: #fdfdfd;
     border: 16px solid rgba(88, 58, 251, 0.1);
     box-shadow: 0px 15px 50px rgba(69, 90, 100, 0.1);
     border-radius: 40px;
-     @include bp(sm){
+    @include bp(sm) {
       border: none;
       border-radius: 24px;
     }
-    .tab-nav{
-      @include bp(sm){
+    .tab-nav {
+      @include bp(sm) {
         margin: 0;
       }
     }
-    .mb-xs{
+    .mb-xs {
       margin-bottom: 1.3rem;
     }
   }
-  &__header{
+  &__header {
     line-height: 1.9rem;
     padding: 2.7rem 5rem 2.7rem 2.4rem;
     position: relative;
-    border-bottom: 1px solid #EEEFF2;
-    @include bp(sm){
+    border-bottom: 1px solid #eeeff2;
+    @include bp(sm) {
       padding: 1.5rem 4rem;
       text-align: center;
     }
   }
-  &__body{
+  &__body {
     padding: 2.4rem 2.4rem 0.8rem;
-    @include bp(sm){
+    @include bp(sm) {
       padding: 1.5rem 1.5rem 0;
       overflow: hidden;
     }
-    &_padding{
+    &_padding {
       padding-top: 2.2rem;
-      p{
+      p {
         margin-bottom: 1.1rem;
       }
     }
-    &_padding-sm{
+    &_padding-sm {
       padding-top: 1.9rem;
-      p{
+      p {
         margin-bottom: 1.1rem;
       }
     }
   }
-  &__footer{
-    border-top: 1px solid #EEEFF2;
+  &__footer {
+    border-top: 1px solid #eeeff2;
     padding: 2.3rem 0 0.7rem;
     margin: 0 2.4rem;
-    @include bp(sm){
+    @include bp(sm) {
       margin: 0 1.5rem;
       padding-top: 1.3rem;
     }
   }
-  &__user-card{
+  &__user-card {
     margin: 2.2rem 2.2rem -0.1rem;
-    @include bp(sm){
+    @include bp(sm) {
       margin: 1.5rem 1.5rem -0.1rem;
     }
-    &.user-card{
-      p{
+    &.user-card {
+      p {
         margin-bottom: 0.7rem;
       }
     }
   }
 
-  &__group{
+  &__group {
     position: relative;
     padding: 4rem 0 0.8rem;
     margin-bottom: 1.3rem;
 
-    &:after, &:before{
-      content: '';
+    &:after,
+    &:before {
+      content: "";
       display: block;
       position: absolute;
       top: 0;
       left: -0.2rem;
       right: -2.4rem;
-      border-bottom: 1px solid #EEEFF2;
+      border-bottom: 1px solid #eeeff2;
     }
 
-    &:after{
+    &:after {
       top: auto;
       bottom: 0;
     }
   }
 
-  &__buttons{
+  &__buttons {
     padding-bottom: 1.6rem;
 
-    @include bp(sm){
-      .btn{
+    @include bp(sm) {
+      .btn {
         margin-bottom: 1rem;
       }
     }
@@ -159,42 +161,41 @@
   position: relative;
   pointer-events: auto;
   margin: 3rem 1rem;
-  @include bp(sm-up){
+  @include bp(sm-up) {
     width: 41.2rem;
     margin: 5rem auto;
   }
-  &_sm{
-    @include bp(sm-up){
+  &_sm {
+    @include bp(sm-up) {
       width: 43.2rem;
     }
   }
-  &_md{
-    @include bp(sm-up){
+  &_md {
+    @include bp(sm-up) {
       width: 45.2rem;
     }
   }
 }
 .modal .modal-dialog {
-  transition: transform .3s ease-out;
-  transform: translate(0,-50px);
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
 }
 .modal.show .modal-dialog {
   transform: none;
 }
 
-
 // dropdown
-.dropdown{
+.dropdown {
   position: relative;
 
-  @include bp(hv){
-    &:hover .dropdown-menu_tooltip{
+  @include bp(hv) {
+    &:hover .dropdown-menu_tooltip {
       display: block;
     }
   }
 }
 
-.dropdown-menu{
+.dropdown-menu {
   position: absolute;
   z-index: 1000;
   display: none;
@@ -207,17 +208,17 @@
   border-radius: 10px;
   overflow: hidden;
 
-  &_padding{
+  &_padding {
     padding: 0.8rem 1.6rem;
   }
 
-  &_right{
+  &_right {
     top: 0;
     right: 100%;
     margin: -0.7rem 0 0 0;
   }
 
-  &_tooltip{
+  &_tooltip {
     background: $primary;
     overflow: visible;
     border-radius: 0;
@@ -230,8 +231,12 @@
     transform: translateX(-47%);
     margin: 0 0 1rem;
 
-    &:after{
-      content: '';
+    @include bp(md) {
+      transform: translateX(-20%);
+    }
+
+    &:after {
+      content: "";
       position: absolute;
       top: 100%;
       left: 0;
@@ -242,38 +247,44 @@
       border-style: solid;
       border-color: $primary transparent transparent transparent;
       margin: 0 auto;
+
+      @include bp(md) {
+        right: auto;
+        left: 20%;
+      }
     }
 
-    &_left{
+    &_left {
       transform: none;
-        border-bottom-left-radius: 0;
-        margin: 0 0 1rem 0;
-        width: 22rem;
+      border-bottom-left-radius: 0;
+      margin: 0 0 1rem 0;
+      width: 22rem;
 
-        &::after{
-          right: auto;
-          left: -0.1rem;
-          border-left-color: $primary;
-          border-width: 0.5rem;
-        }
+      &::after {
+        right: auto;
+        left: -0.1rem;
+        border-left-color: $primary;
+        border-width: 0.5rem;
+      }
     }
   }
 
-  &__link{
+  &__link {
     padding: 0.8rem 1.6rem;
-    &:not(:last-child){
+    &:not(:last-child) {
       border-bottom: 1px solid rgba(193, 196, 208, 0.15);
     }
   }
 }
-.dropdown-toggle{
+.dropdown-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   padding-right: 3.2rem;
   height: 2.4rem;
-  &::after, &:before {
+  &::after,
+  &:before {
     content: "";
     display: block;
     width: 2.4rem;
@@ -285,39 +296,41 @@
     background-size: contain;
     transition: all 0.3s ease-out;
   }
-  &:before{
+  &:before {
     opacity: 0;
     background-image: url(../img/icons/caret-secondary.svg);
   }
-  &:hover{
-    &::before{
+  &:hover {
+    &::before {
       opacity: 1;
     }
-    &::after{
+    &::after {
       opacity: 0;
     }
   }
-  &.show::after{
+  &.show::after {
     transform: rotate(180deg);
     border-color: $primary;
   }
-  &_clear{
+  &_clear {
     padding: 0;
-    &:before, &:after{
+    &:before,
+    &:after {
       display: none;
     }
   }
 }
-.open{
-  .dropdown-toggle{
+.open {
+  .dropdown-toggle {
     color: $secondary;
-    &::before, &::after{
+    &::before,
+    &::after {
       transform: rotate(180deg);
     }
-    &::before{
+    &::before {
       opacity: 1;
     }
-    &::after{
+    &::after {
       opacity: 0;
     }
   }
@@ -326,12 +339,11 @@
   }
 }
 
-
-.coins-header{
+.coins-header {
   padding-top: 0.3rem;
 }
 
-.tags-list{
+.tags-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1rem;

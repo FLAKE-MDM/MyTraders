@@ -997,6 +997,70 @@ body {
   }
 }
 
+// stacktable
+.stacktable {
+  width: 100%;
+}
+.st-head-row {
+  padding-top: 1em;
+}
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+.st-key {
+  width: 50%;
+  padding: 0.5rem 1rem !important;
+
+  .d-flex {
+    justify-content: flex-start !important;
+  }
+}
+.st-val {
+  width: 50%;
+  text-align: right !important;
+  padding: 1rem !important;
+
+  .d-flex,
+  .d-inline-flex {
+    justify-content: flex-end !important;
+  }
+}
+
+.stacktable.large-only {
+  display: table;
+}
+.stacktable.small-only {
+  display: none;
+  border-bottom: 1px solid $light;
+  margin-bottom: 1rem;
+}
+
+@include bp(md) {
+  .stacktable.large-only {
+    display: none;
+  }
+  .stacktable.small-only {
+    display: table;
+  }
+}
+
+.mobile-table {
+  th:last-child,
+  th.last {
+    @include bp(lg-up) {
+      .dropdown-menu_tooltip {
+        transform: translateX(-70%);
+
+        &::after {
+          left: auto;
+          right: 24%;
+        }
+      }
+    }
+  }
+}
+
 @import "form";
 @import "table";
 @import "header";

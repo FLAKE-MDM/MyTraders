@@ -20,14 +20,16 @@ $(".pane-open").click(function (e) {
 });
 
 // dropdown
-$(".dropdown-toggle").click(function (e) {
-  e.preventDefault();
-  $(this).parent().toggleClass("open");
-  $(document).mouseup(function (e) {
-    let item = $(".dropdown.open");
-    if (item.has(e.target).length === 0) {
-      item.removeClass("open");
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  $(".dropdown-toggle").on("click", function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass("open");
+    $(document).mouseup(function (e) {
+      let item = $(".dropdown.open");
+      if (item.has(e.target).length === 0) {
+        item.removeClass("open");
+      }
+    });
   });
 });
 
@@ -1795,3 +1797,6 @@ for (let item of graphArr) {
     graph.render();
   }
 }
+
+//table
+$(".mobile-table").cardtable();
